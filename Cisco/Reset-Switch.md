@@ -2,7 +2,7 @@
 title: Reset Switch Cisco
 description: 
 published: true
-date: 2021-11-17T10:17:09.245Z
+date: 2021-12-15T21:25:02.407Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T09:36:44.612Z
@@ -47,24 +47,7 @@ Supprimez le fichier vlan.dat à partir du répertoire flash.
   switch: boot
 
 ![console7.png](/cisco/reset/console7.png) 
-
-# Pour un Rechargement de l'IOS
-
-En cas d'absence d'OS sur le commutateur, suivez la procédure à partir de cette vidéo : https://www.youtube.com/watch?v=bEIaNtg1cCg
-Redémarrez le switch comme ci-dessus Etape 1
-Utilisez le logiciel TeraTerm https://osdn.net/projects/ttssh2/releases,
-(dans communProfs avec IOS), entrez en communication avec le switch, 
-  switch: set BAUD 115200
-régler la configuration du port serie de Tera Term  pour 115200,
-  switch: copy xmodem: flash: c2960-lanbasek9-mz.152-7.E2.bin 
-  CC
-Dans Tera Term, sélectionner le fichier c2960-lanbasek9-mz.152-7.E2.bin à transferer: fichier/transfert/xmodem/envoyer sélectionner la source, le téléchargement commence. 
-
-puis repasser le switch et Tera term  à 9600 baud
-  switch: set BAUD 9600
-  switch: boot
-  
-Répondre non pour ne pas rentrer dans la configuration initiale  
+ 
 # Pour une simple réinitialisation du switch : 
 
   switch>en
