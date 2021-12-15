@@ -2,7 +2,7 @@
 title: Commandes Cisco
 description: 
 published: true
-date: 2021-12-15T21:08:55.008Z
+date: 2021-12-15T21:24:00.986Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-15T16:58:27.804Z
@@ -20,7 +20,7 @@ Switch# reload
 # Changer le Hostname
 > hostname switch_Minz
 
-# Crée un utilisateur
+# Créer un utilisateur
 > switch(config)#username admin privilege 15 secret Mdpsecu
 
 # Mettre un mots de passe
