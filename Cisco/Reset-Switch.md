@@ -2,18 +2,16 @@
 title: Reset Switch Cisco
 description: 
 published: true
-date: 2021-12-15T21:25:02.407Z
+date: 2021-12-15T21:26:58.140Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T09:36:44.612Z
 ---
 
 # Réinitialisation rapide du commutateur
-Cette section décrit comment réinitialiser le commutateur en relançant la Configuration rapide. La réinitialisation du commutateur peut être requise dans les cas suivants : 
-  * Liste à puceVous avez installé le commutateur dans votre réseau et vous ne pouvez pas vous y connecter car l'adresse IP attribuée est incorrecte.
-  * Vous voulez effacer toutes les configurations du commutateur et attribuer une nouvelle adresse IP.
-  * Vous tentez d'entrer en mode Configuration rapide et les DEL du commutateur commencent à clignoter lorsque vous appuyez sur le bouton Mode, ce qui signifie que le commutateur est déjà configuré avec des informations IP.
-{{ :bouton_mode.png?200|}}Pour réinitialiser le commutateur, appuyez sur le bouton Mode et maintenez-le enfoncé. Après environ 3 secondes, les DEL du commutateur commencent à clignoter. Continuez à maintenir le bouton Mode enfoncé. Les DEL cessent de clignoter après 7 secondes supplémentaires, puis le commutateur redémarre. Relâchez le bouton.
+
+Pour réinitialiser le commutateur, appuyez sur le bouton Mode et maintenez-le enfoncé. Après environ 3 secondes, les DEL du commutateur commencent à clignoter. Continuez à maintenir le bouton Mode enfoncé. Les DEL cessent de clignoter après 7 secondes supplémentaires, puis le commutateur redémarre. Relâchez le bouton.
+
 Le commutateur agit dorénavant comme s'il n'était pas configuré.
 
 # Procédure de réinitialisation complète du commutateur vers les réglages d’usine par défaut
@@ -27,32 +25,28 @@ Cela interrompt le processus de démarrage avant que le système de fichiers Fla
 
   * Étape 2 - réinitialisation de la mémoire flash du switch
 Initialiser le système de fichiers flash avec la commande:
-  switch: flash_init
+>  switch: flash_init
 
-{{ :console3.png?400 |}}
 ![console3.png](/cisco/reset/console3.png)
   * Étape 3 - suppression du fichier de configuration
 Supprimez le fichier config.text à partir du répertoire flash.
-  switch: del flash:config.text
+>  switch: del flash:config.text
 
 ![console5.png](/cisco/reset/console5.png)
   * Étape 4 - suppression des vlans
 Supprimez le fichier vlan.dat à partir du répertoire flash.
-  switch: del flash:vlan.dat
+>  switch: del flash:vlan.dat
   
-{{ :console6.png?400 |}}
 ![console6.png](/cisco/reset/console6.png)
   * Étape 5 - redémarrage du switch
 
-  switch: boot
+>  switch: boot
 
 ![console7.png](/cisco/reset/console7.png) 
  
 # Pour une simple réinitialisation du switch : 
 
-  switch>en
+> switch>en
   switch# erase nvram:
   switch# delete flash:vlan.dat
-  switch# reload
-  switch# end
-  
+  switch# reload  
