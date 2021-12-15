@@ -2,7 +2,7 @@
 title: Commandes Cisco
 description: 
 published: true
-date: 2021-12-15T16:59:32.964Z
+date: 2021-12-15T16:59:56.543Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-15T16:58:27.804Z
@@ -14,7 +14,7 @@ Switch# delete flash:vlan.dat
 Switch# delete flash:config.text
 Switch# reload
 
-# Voir la version
+# Afficher la version
 > Router# show version
 
 # Routage Statique
