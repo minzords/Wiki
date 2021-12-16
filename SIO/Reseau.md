@@ -2,7 +2,7 @@
 title: Commandes Réseau
 description: 
 published: true
-date: 2021-12-16T08:49:22.074Z
+date: 2021-12-16T08:51:42.948Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-16T08:49:22.074Z
@@ -52,4 +52,12 @@ dateCreated: 2021-12-16T08:49:22.074Z
 > netsh interface ip add dns name="Connexion au réseau local" 149.112.121.10 index=2
 ### IPv6
 > netsh interface ip set dns name="Connexion au réseau local" static 2620:10A:80BC::10 index=2
+
+# Avoir l'ip et l'adresse MAC (ARP)
+> arp -a
+
+# Tester le DNS
+> nslookup videotron.com
+
+
 
