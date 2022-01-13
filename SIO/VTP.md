@@ -2,28 +2,31 @@
 title: Configuration de VTP
 description: 
 published: true
-date: 2022-01-13T11:44:14.462Z
+date: 2022-01-13T11:46:38.967Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-13T11:44:14.462Z
 ---
 
-# Configurer VTP
-## Mode serveur
-Le domaine:
+# Mode serveur
+***Le domaine:***
 > server(config)# vtp domain testVTP
-Definir le mode:
+
+***Definir le mode:***
 > server(config)# vtp mode server
-Mettre un mots de passe (optionnel)
+
+***Mettre un mots de passe (optionnel)***
 > server(config)# VTP password azerty
 
-## Mode client
-Le domaine:
+# Mode client
+***Le domaine:***
 > server(config)# vtp domain testVTP
-Definir le mode:
+
+***Definir le mode:***
 > client (config)# vtp mode client
 > client (config)# vtp mode transparent
-Mettre un mots de passe (optionnel)
+
+***Mettre un mots de passe (optionnel)***
 > client (config)#vtp password azerty
 
 # Verification de la configuration
