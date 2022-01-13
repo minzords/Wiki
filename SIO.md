@@ -2,7 +2,7 @@
 title: Memo Cours
 description: 
 published: true
-date: 2022-01-13T11:49:17.452Z
+date: 2022-01-13T11:51:54.462Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-15T07:24:16.372Z
