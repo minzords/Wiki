@@ -2,7 +2,7 @@
 title: Configuration de VTP
 description: 
 published: true
-date: 2022-01-13T14:13:55.691Z
+date: 2022-01-13T16:24:33.094Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-13T11:44:14.462Z
@@ -31,6 +31,9 @@ dateCreated: 2022-01-13T11:44:14.462Z
 
 # Verification de la configuration
 > server# show vtp status
+
+# Changement de la version
+> vtp version 2
 
 # Configuration du Protocole DTP
 > Switch_A(config)# interface fastethernet 0/1
