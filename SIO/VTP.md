@@ -2,7 +2,7 @@
 title: Configuration de VTP
 description: 
 published: true
-date: 2022-01-13T13:39:54.268Z
+date: 2022-01-13T14:13:55.691Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-13T11:44:14.462Z
@@ -36,5 +36,5 @@ dateCreated: 2022-01-13T11:44:14.462Z
 > Switch_A(config)# interface fastethernet 0/1
 > Switch_A(config-if)# shutdown
 > Switch_A(config-if)# switchport mode trunk
-> Switch_A(config-if)# switchport nonegociate
+> Switch_A(config-if)# switchport nonegotiate
 > Switch_A(config-if)# no shutdown
