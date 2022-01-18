@@ -2,7 +2,7 @@
 title: Memo Cours
 description: 
 published: true
-date: 2022-01-13T16:38:07.083Z
+date: 2022-01-18T15:01:16.353Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-15T07:24:16.372Z
@@ -15,4 +15,7 @@ Memo Cours
 - [Memo Bash](/SIO/Bash)
 - [Memo Ligne de Commande](/SIO/Commande)
 - [Bruteforce avec Hydra](/SIO/BruteForce-Hydra)
+
+# Windows:
+- [Batch](/SIO/Batch)
 {.links-list}
