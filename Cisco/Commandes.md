@@ -2,7 +2,7 @@
 title: Commandes Cisco
 description: 
 published: true
-date: 2022-01-21T11:31:09.824Z
+date: 2022-01-21T11:31:19.102Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-15T16:58:27.804Z
@@ -66,7 +66,7 @@ Switch(config)#line vty 3 15
 # Chiffrement de ses mots de passe
 > switch(config)# service password-encryption
 
-## Chiffrement ses mots de passe en vigenère
+## Chiffrement de ses mots de passe en vigenère
 > Switch(config)# no enable password 
 Switch(config)#enable secret Mdpsecu
 
