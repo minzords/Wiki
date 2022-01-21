@@ -2,7 +2,7 @@
 title: Fiche Controle
 description: 
 published: true
-date: 2022-01-21T11:39:48.512Z
+date: 2022-01-21T11:48:00.904Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-21T11:35:55.490Z
@@ -104,3 +104,108 @@ switchport port-security violation protect | restrict [ shutdown
 ### Activer le Spanning-Tree
 > Switch(config)#spanning-tree mode rapid-pvst
 
+# VLAN
+## Creation du VLAN
+> switch(conf)# vlan 2
+> Switch(config-vlan)# name Production
+
+## Affectation
+> switch(conf)# interface fa0/1
+> Switch(config-if)# switchport mode access
+> Switch(config-if)# switchport access vlan 2
+
+## Avec un range
+> switch(conf)# interface range fa0/1-6
+> Switch(config-if)# switchport mode access
+> Switch(config-if)# switchport access vlan 2
+
+## Définir le VLAN 2 (Production)
+> switch(conf)# vlan 2
+> switch(conf-vlan)# name Production
+> switch(conf-vlan)# exit
+
+## Attribution d'une IP sur le VLAN
+> switch(config)#int vlan 2
+> switch(config-if)#ip address 10.0.0.2 255.0.0.0
+> switch(config-if)#no shutdown
+
+## Rattacher le port fa0/1 au vlan 2
+> switch(conf)# interface fa0/1
+> switch(conf-if)# switchport mode access
+> switch(conf-if)# switchport access vlan 2
+
+## Rattacher le port fa0/5 à fa0/10 au vlan 2
+> switch(conf)# interface range fa0/5
+> switch(conf-if-range)# switchport mode access
+> switch(conf-if-range)# switchport access vlan 2
+  
+# Routage inter-VLAN
+## Autorisé certains VLANS et changement du VLAN par défaut
+> Switch(config)#interface fa0/1
+> Switch(config-if)#switchport mode trunk
+> Switch(config-if)#switchport trunk allowed vlan 20,30,99
+> Switch(config-if)# switchport trunk native vlan 99
+> Switch(config-if)#no shutdown
+
+## Allocation du VLAN
+> Switch(config)#interface fa0/2 ( dépend du câblage bien
+> sur )
+> Switch(config-if)#switchport access vlan 20
+> Switch(config-if)#no shutdown
+> Switch(config-if)#exit
+> Switch(config)#interface fa0/3
+> Switch(config-if)#switchport access vlan 30
+> Switch(config-if)#no shutdown
+
+## Config du Routeur
+> Router#configuration terminal
+> Router(config)#interface fa0/0
+> Router(config-if)#no shutdown
+
+***Pour le VLAN 20***
+> Router(config)#interface fa0/0.20
+> Router(config-subif)#encapsulation dot1Q 20
+> Router(config-subif)#ip address 192.168.20.254 255.255.255.0
+> Router(config-subif)#no shutdown
+
+## Encapsulation dot1q
+> Switch(config)#interface fa0/3
+> Switch(config-if)#switchport mode trunk
+> Switch(config-if)#switchport trunk allowed vlan 20,30,99
+> Switch(config-if)# switchport trunk native vlan 99
+> Switch(config-if)#no shutdown
+
+# VTP
+## Mode serveur
+***Le domaine:***
+> server(config)# vtp domain testVTP
+
+***Definir le mode:***
+> server(config)# vtp mode server
+
+***Mettre un mots de passe (optionnel)***
+> server(config)# VTP password azerty
+
+## Mode client
+***Le domaine:***
+> server(config)# vtp domain testVTP
+
+***Definir le mode:***
+> client (config)# vtp mode client
+> client (config)# vtp mode transparent
+
+***Mettre un mots de passe (optionnel)***
+> client (config)#vtp password azerty
+
+## Verification de la configuration
+> server# show vtp status
+
+## Changement de la version
+> vtp version 2
+
+## Configuration du Protocole DTP
+> Switch_A(config)# interface fastethernet 0/1
+> Switch_A(config-if)# shutdown
+> Switch_A(config-if)# switchport mode trunk
+> Switch_A(config-if)# switchport nonegotiate
+> Switch_A(config-if)# no shutdown
