@@ -2,7 +2,7 @@
 title: Fiche Controle
 description: 
 published: true
-date: 2022-01-21T11:35:55.490Z
+date: 2022-01-21T11:39:48.512Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-21T11:35:55.490Z
@@ -94,8 +94,8 @@ switchport port-security violation protect | restrict [ shutdown
 > Switch(config)#ip dhcp snooping vlan 10
 
 ### Configurer le truck
-Switch(config)#interface GigabitEthernet0/1
-Switch(config-if)#ip dhcp snooping trust
+> Switch(config)#interface GigabitEthernet0/1
+> Switch(config-if)#ip dhcp snooping trust
 
 ### Activer l'option DHCP 82
 > Switch(config)#ip dhcp snooping information option
