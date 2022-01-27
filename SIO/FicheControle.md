@@ -2,7 +2,7 @@
 title: Fiche Controle
 description: 
 published: true
-date: 2022-01-21T11:48:31.972Z
+date: 2022-01-27T07:37:30.714Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-21T11:35:55.490Z
@@ -40,7 +40,7 @@ dateCreated: 2022-01-21T11:35:55.490Z
 > Switch(config)#ip ssh authentication-retries 3
 
 ## Désactiver Telnet
-> Switch(config)#line vty 0 2
+> Switch(config)#line vty 0 15
 > Switch(config-line)#access-class SSH_ACCESS in
 > Switch(config-line)#login local
 > Switch(config-line)#transport input ssh
