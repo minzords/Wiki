@@ -2,7 +2,7 @@
 title: Protections aux attaques
 description: 
 published: true
-date: 2022-01-27T07:03:00.574Z
+date: 2022-01-27T08:16:42.727Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-20T20:37:29.158Z
@@ -43,7 +43,7 @@ En cas de detection de violation de securité
 config-if)#switchport port-security violation protect | restrict [ shutdown
 > switchport port-security violation restrict
 
-# DHCP SPOOFING
+# DHCP SPOOPING
 ## Activation du DHCP Snooping sur tout les ports
 > Switch(config)#ip dhcp snooping
 
