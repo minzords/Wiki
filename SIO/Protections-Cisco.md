@@ -2,7 +2,7 @@
 title: Protections aux attaques
 description: 
 published: true
-date: 2022-01-20T20:38:07.523Z
+date: 2022-01-27T07:03:00.574Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-20T20:37:29.158Z
@@ -61,4 +61,11 @@ Switch(config-if)#ip dhcp snooping trust
 ## Activer le Spanning-Tree
 > Switch(config)#spanning-tree mode rapid-pvst
 
-
+# SSH
+## Creation de clé RSA SSH
+> crypto key generate rsa general-keys modulus 1024
+## Activer SSH
+>ip ssh version 2
+## Config SSH
+> Switch(config)#ip ssh time-out 60
+Switch(config)#ip ssh authentication-retries 3 
