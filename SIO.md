@@ -2,7 +2,7 @@
 title: Memo Cours
 description: 
 published: true
-date: 2022-01-20T20:39:16.003Z
+date: 2022-01-27T15:38:26.985Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-15T07:24:16.372Z
@@ -19,6 +19,8 @@ Memo Cours
 
 # Cisco
 - [Protections aux attaques](/SIO/Protections-Cisco)
+- [RIP](/SIO/RIP)
+- [EIGRP](/SIO/EIGRP)
 {.links-list}
 
 # Windows:
