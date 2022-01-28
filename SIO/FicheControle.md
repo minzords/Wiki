@@ -2,7 +2,7 @@
 title: Fiche Controle
 description: 
 published: true
-date: 2022-01-27T07:37:30.714Z
+date: 2022-01-28T15:40:01.844Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-21T11:35:55.490Z
@@ -26,6 +26,10 @@ dateCreated: 2022-01-21T11:35:55.490Z
 > switch(config-line)# speed 9600
 > switch(config-line)#password Mdpsecu
 > switch(config-line)#login local
+
+> En cas de problème testé avec: login authentication default
+{.is-warning}
+
 
 ## Configurer un domaine
 > Switch(config)#ip domain-name minz.local
