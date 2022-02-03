@@ -2,7 +2,7 @@
 title: RIP
 description: 
 published: true
-date: 2022-02-03T15:34:22.211Z
+date: 2022-02-03T15:38:14.075Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-27T15:37:45.175Z
@@ -20,3 +20,9 @@ dateCreated: 2022-01-27T15:37:45.175Z
 # Changer la distance
 > Router(config)# router rip
 > Router(config-router)# distance 89
+
+# Activé le DEBUG
+> Router# debug ip rip
+
+# Voir les routes
+> Router# sh ip route
