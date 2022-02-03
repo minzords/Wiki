@@ -2,7 +2,7 @@
 title: RIP
 description: 
 published: true
-date: 2022-02-03T14:42:54.259Z
+date: 2022-02-03T15:34:22.211Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-27T15:37:45.175Z
@@ -14,8 +14,8 @@ dateCreated: 2022-01-27T15:37:45.175Z
 > Router(config-router)# no auto-summary
 
 # Ajouter les réseaux connus
-> Router(config-router)# network 192.168.1.10
-> Router(config-router)# network 192.168.1.20
+> Router(config-router)# network 192.168.10.0
+> Router(config-router)# network 192.168.20.0
 
 # Changer la distance
 > Router(config)# router rip
