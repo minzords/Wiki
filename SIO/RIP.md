@@ -2,7 +2,7 @@
 title: RIP
 description: 
 published: true
-date: 2022-02-03T15:38:14.075Z
+date: 2022-02-03T15:38:22.251Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-27T15:37:45.175Z
@@ -23,6 +23,3 @@ dateCreated: 2022-01-27T15:37:45.175Z
 
 # Activé le DEBUG
 > Router# debug ip rip
-
-# Voir les routes
-> Router# sh ip route
