@@ -2,7 +2,7 @@
 title: RIP
 description: 
 published: true
-date: 2022-02-03T15:38:22.251Z
+date: 2022-02-03T15:40:26.921Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-27T15:37:45.175Z
