@@ -2,7 +2,7 @@
 title: RAID
 description: 
 published: true
-date: 2022-02-04T07:36:29.161Z
+date: 2022-02-04T07:36:37.148Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-04T07:25:14.744Z
@@ -58,4 +58,3 @@ Meilleure redondance des données dans chaque sous-unité pour une meilleure sé
 - **MTBF** : Middle Time Between Failures (temps moyen de fonctionnement avant panne), environ 500 000 heures.
 - **Mode dégradé** : lorsqu'un disque dur crashe, le système continue à fonctionner dans un mode dit "dégradé", ce qui traduit le fait que la sécurité n'est plus assurée tant que le disque fautif n'est pas remplacé. 
 - **Hot swap ou hot plug** : propriété de certains disques à pouvoir être remplacés "à chaud", sans éteindre le système.
-Ce que peut faire 
