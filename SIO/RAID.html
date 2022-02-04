@@ -1,0 +1,62 @@
+<!--
+title: RAID
+description: 
+published: true
+date: 2022-02-04T07:41:43.478Z
+tags: 
+editor: code
+dateCreated: 2022-02-04T07:25:14.744Z
+-->
+
+<h1 class="toc-header" id="raid-0"> RAID 0</h1>
+<p><img alt="raid0.png" src="/linux/raid/raid0.png"></p>
+<ul>
+<li>Avantages : cumuler la capacité de plusieurs disques physiques sur un même lecteur logique, augmenter les performances en lecture/ écriture.</li>
+<li>Inconvénient : pas plus de sécurité. Au contraire : si un des disques crashe, on perd toutes les données.</li>
+</ul>
+<p>Les entreprises utilisent RAID 0 principalement pour les tâches nécessitant un accès rapide à une grande capacité de stockage temporaire sur disques.</p>
+<h1 class="toc-header" id="raid-1"> RAID 1</h1>
+<p><img alt="raid1.png" src="/linux/raid/raid1.png"></p>
+<ul>
+<li>Avantages : sécurité (si un des disques crashe, on conserve toutes les données), performances en lecture (mais pas en écriture).</li>
+<li>Inconvénient : gaspillage de 50% de l'espace disque.</li>
+</ul>
+<p>Garantie de protection des données et la redondance. Le coût par gigaoctet de capacité utilisable est un élément secondaire.</p>
+<h1 class="toc-header" id="raid-3-et-4"> RAID 3 et 4</h1>
+<p><img alt="raid3.png" src="/linux/raid/raid3.png"></p>
+<ul>
+<li>Avantages : sécurité, résiste à la panne d’un disque, augmentation des performances en lecture et en écriture.</li>
+<li>Inconvénient : le disque qui stocke la parité est beaucoup plus sollicité que les autres, et a donc une durée de vie plus courte.</li>
+</ul>
+<p>Les RAID 3 et 4 sont remplacés par les RAID 5 ou 6</p>
+<h1 class="toc-header" id="raid-5"> RAID 5</h1>
+<p><img alt="raid5.png" src="/linux/raid/raid5.png"></p>
+<ul>
+<li>Avantages : sécurité (si un des disques crashe, on conserve toutes les données), performances en lecture.</li>
+<li>Inconvénient : les écritures sont pénalisées (temps de calcul des parités)</li>
+</ul>
+<p>RAID 5 est le plus utilisé, car il gère mieux les pannes.</p>
+<h1 class="toc-header" id="raid-10"> RAID 10</h1>
+<p><img alt="raid10.png" src="/linux/raid/raid10.png"></p>
+<ul>
+<li>Rassemble le RAID 0 et 1&nbsp;(deux disques durs assemblés en RAID 1 + deux autres disques sont assemblés de la même façon)</li>
+<li>Il faut donc un minimum de quatre disques et toujours en nombre pair.</li>
+</ul>
+<p>Meilleure redondance des données dans chaque sous-unité pour une meilleure sécurité, tandis que la répartition des données sur plusieurs unités logiques accélère la lecture et l’écriture.</p>
+<h1 class="toc-header" id="comment-choisir-les-raid"> Comment choisir les RAID.</h1>
+<p><img alt="diagramme.png" src="/linux/raid/diagramme.png"></p>
+<ul>
+<li>la sécurité : RAID 1 ou 1+0 et 5 offrent tous les deux un niveau de sécurité élevé&nbsp;;</li>
+<li>les performances : RAID 1 offre de meilleures performances que RAID 5 en lecture, mais souffre lors d'importantes opérations d'écriture.</li>
+<li>le coût : le coût est directement lié à la capacité de stockage de la grappe.</li>
+</ul>
+<p><img alt="tableau.png" src="/linux/raid/tableau.png"></p>
+<h1 class="toc-header" id="vocabulaire"> Vocabulaire</h1>
+<ul>
+<li><strong>Grappe</strong>&nbsp;: unité de stockage créée à partir de plusieurs disques</li>
+<li>Striping : augmentation des performances grâce à l'accès simultané à plusieurs disques.</li>
+<li><strong>Duplexing</strong> : tolérance des pannes des contrôleurs, car chaque disque est branché sur un contrôleur différent.</li>
+<li><strong>MTBF</strong> : Middle Time Between Failures (temps moyen de fonctionnement avant panne), environ 500 000 heures.</li>
+<li><strong>Mode dégradé</strong> : lorsqu'un disque dur crashe, le système continue à fonctionner dans un mode dit "dégradé", ce qui traduit le fait que la sécurité n'est plus assurée tant que le disque fautif n'est pas remplacé.</li>
+<li><strong>Hot swap ou hot plug</strong> : propriété de certains disques à pouvoir être remplacés "à chaud", sans éteindre le système.</li>
+</ul>
