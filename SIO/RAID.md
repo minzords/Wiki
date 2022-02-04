@@ -2,7 +2,7 @@
 title: RAID
 description: 
 published: true
-date: 2022-02-04T07:35:32.032Z
+date: 2022-02-04T07:36:29.161Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-04T07:25:14.744Z
@@ -50,3 +50,12 @@ Meilleure redondance des données dans chaque sous-unité pour une meilleure sé
 - le coût : le coût est directement lié à la capacité de stockage de la grappe.
 
 ![tableau.png](/linux/raid/tableau.png)
+
+# Vocabulaire
+- **Grappe** : unité de stockage créée à partir de plusieurs disques 
+- Striping : augmentation des performances grâce à l'accès simultané à plusieurs disques. 
+- **Duplexing** : tolérance des pannes des contrôleurs, car chaque disque est branché sur un contrôleur différent. 
+- **MTBF** : Middle Time Between Failures (temps moyen de fonctionnement avant panne), environ 500 000 heures.
+- **Mode dégradé** : lorsqu'un disque dur crashe, le système continue à fonctionner dans un mode dit "dégradé", ce qui traduit le fait que la sécurité n'est plus assurée tant que le disque fautif n'est pas remplacé. 
+- **Hot swap ou hot plug** : propriété de certains disques à pouvoir être remplacés "à chaud", sans éteindre le système.
+Ce que peut faire 
