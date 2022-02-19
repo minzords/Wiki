@@ -2,7 +2,7 @@
 title: EIGRP
 description: 
 published: true
-date: 2022-02-19T17:14:19.799Z
+date: 2022-02-19T17:15:45.691Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-27T15:31:10.997Z
@@ -20,12 +20,12 @@ dateCreated: 2022-01-27T15:31:10.997Z
 
 > Router(config-router)# no auto-summary
 
-> no auto-summary pert de désactivé le résumé automatique des routes dans la table de routage de l’équipement.
+> no auto-summary permet de désactiver le résumé automatique des routes dans la table de routage de l’équipement.
 {.is-info}
 
 > Router(config-router)## redistribute static
 
-> Il redistribue la route static
+> Il redistribue la route statique
 {.is-info}
 
 # Route statique
