@@ -2,7 +2,7 @@
 title: EIGRP
 description: 
 published: true
-date: 2022-01-27T15:35:05.054Z
+date: 2022-02-19T17:14:19.799Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-27T15:31:10.997Z
@@ -31,5 +31,5 @@ dateCreated: 2022-01-27T15:31:10.997Z
 # Route statique
 > Router(config)# ip route 0.0.0.0 0.0.0.0 209.165.200.225
 
-# Voir les Routes
+# Voir la table de routage
 > Router# show ip route
