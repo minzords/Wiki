@@ -2,14 +2,14 @@
 title: BGP
 description: 
 published: true
-date: 2022-02-19T17:09:02.558Z
+date: 2022-02-19T17:11:05.856Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-19T17:09:02.558Z
 ---
 
 # Introduction à BGP
-Le protocole BGP standardisé dans la RFC 4271, sert à interconnecté plusieurs réseaux. Pour communiqué BGP établie une connexion sur le port 179 en TCP.
+Le protocole BGP standardisé dans la RFC 4271, il sert à interconnecté plusieurs réseaux. Pour communiqué BGP établie une connexion sur le port 179 en TCP.
 Il annonce les nouveautés avec "**ANNOUNCE**" et pour la suppression d'une route avec **WITHDRAW**.
 BGP transmet uniquement les nouveautés.
 
