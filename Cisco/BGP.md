@@ -2,7 +2,7 @@
 title: BGP
 description: 
 published: true
-date: 2022-02-19T17:11:05.856Z
+date: 2022-02-19T19:28:15.376Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-19T17:09:02.558Z
@@ -25,8 +25,14 @@ Pour un cours plus complet je vous recommande le cours au CNAM de Stéphane Bort
 	172.16.1.2 est l'IP pour joindre le routeur du voisin et 200 son numéro d'AS.
 - Annoncer un réseau avec **network** et le réseau.
 
+# Mettre une limite de préfixe
+> ISP1(config-router)# neighbor 172.16.1.2 maximum-prefix 5
+
+Dans cet exemple, il y a une limite à 5 préfixes.
+
 # Voir la table de routage
 > ISP1# show ip route
+
 Les routes BGP sont repérés avec la lettre **B**.
 
 # Affichage des informations BGP
