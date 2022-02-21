@@ -2,7 +2,7 @@
 title: Protections aux attaques
 description: 
 published: true
-date: 2022-01-27T08:16:42.727Z
+date: 2022-02-21T16:30:24.413Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-20T20:37:29.158Z
@@ -42,20 +42,6 @@ Mettre des adresses remanente tout en enregistrant une adresse statique
 En cas de detection de violation de securité
 config-if)#switchport port-security violation protect | restrict [ shutdown
 > switchport port-security violation restrict
-
-# DHCP SPOOPING
-## Activation du DHCP Snooping sur tout les ports
-> Switch(config)#ip dhcp snooping
-
-## Activation du DHCP Snooping sur un VLAN
-> Switch(config)#ip dhcp snooping vlan 10
-
-## Configurer le truck
-Switch(config)#interface GigabitEthernet0/1
-Switch(config-if)#ip dhcp snooping trust
-
-## Activer l'option DHCP 82
-> Switch(config)#ip dhcp snooping information option
 
 # Spanning-Tree
 ## Activer le Spanning-Tree
