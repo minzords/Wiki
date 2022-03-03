@@ -2,19 +2,19 @@
 title: NAT & PAT
 description: 
 published: true
-date: 2022-03-03T14:26:14.583Z
+date: 2022-03-03T14:26:46.695Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T14:26:14.583Z
 ---
 
 # Mettre le NAT en inside
-R1(config)# interface fa0/0
-R1(config-if)# ip nat inside
+> R1(config)# interface fa0/0
+> R1(config-if)# ip nat inside
 
 # Mettre le NAT en outside
-R1(config)# interface fa0/1
-R1(config-if)# ip nat outside
+> R1(config)# interface fa0/1
+> R1(config-if)# ip nat outside
 
 # Configurer du NAT statique
 > R1(config)# ip nat inside source static 192.168.1.100 201.49.10.30
