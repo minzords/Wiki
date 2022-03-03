@@ -2,7 +2,7 @@
 title: RIP
 description: 
 published: true
-date: 2022-03-03T08:10:10.940Z
+date: 2022-03-03T08:25:42.216Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-27T15:37:45.175Z
@@ -22,7 +22,8 @@ dateCreated: 2022-01-27T15:37:45.175Z
 > Router(config-router)# distance 89
 
 # Diffuser la route par défaut
-> Router(config-router)# default-information originate 
+> Router(config-router)# default-information originate
+> Router(config-router)# redistribute static
 
 # Interface passive
 > Router(config-router)# passive-interface FastEthernet0/1
