@@ -2,7 +2,7 @@
 title: RIP
 description: 
 published: true
-date: 2022-02-03T15:44:23.209Z
+date: 2022-03-03T07:59:47.425Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-27T15:37:45.175Z
@@ -20,6 +20,9 @@ dateCreated: 2022-01-27T15:37:45.175Z
 # Changer la distance
 > Router(config)# router rip
 > Router(config-router)# distance 89
+
+# Interface passive
+> Router(config-router)# passive-interface FastEthernet0/1
 
 # Activé le DEBUG
 > Router# debug ip rip
