@@ -2,7 +2,7 @@
 title: NAT & PAT
 description: 
 published: true
-date: 2022-03-24T07:21:05.182Z
+date: 2022-03-24T07:22:31.266Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T14:26:14.583Z
@@ -12,6 +12,9 @@ dateCreated: 2022-03-03T14:26:14.583Z
 ## Fonctionnement
 - NAT statique : 1 adresse interne ↔ 1 adresse externe
 - NAT dynamique : n adresses internes ↔ m adresses externes
+## Définitions
+- NAT: Transfère d'adresse.
+- PAT: Transfère de Ports
 ## Avantages
 - Économie des adresses publiques
 - augmente la souplesse des connexions au réseau public
