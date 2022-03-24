@@ -2,7 +2,7 @@
 title: NAT & PAT
 description: 
 published: true
-date: 2022-03-24T07:41:07.116Z
+date: 2022-03-24T14:26:47.302Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T14:26:14.583Z
@@ -33,6 +33,9 @@ dateCreated: 2022-03-03T14:26:14.583Z
 
 > **overload**: si il y a plus de machines dans le réseau privé que d’adresses publiques disponibles il fait du PAT
 {.is-info}
+
+# Redirection d'un PORT vers IP Publique
+> ip nat inside source static tcp 192.168.0.200 80 20.0.0.1 80
 
 # Voir les translations NAT
 > R1(config)# show ip nat translations
