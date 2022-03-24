@@ -2,7 +2,7 @@
 title: NAT & PAT
 description: 
 published: true
-date: 2022-03-24T14:26:47.302Z
+date: 2022-03-24T16:03:36.509Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T14:26:14.583Z
@@ -31,7 +31,7 @@ dateCreated: 2022-03-03T14:26:14.583Z
 
 >R1(config)#ip nat inside source list 1 pool POOL-NAT-LAN2 overload
 
-> **overload**: si il y a plus de machines dans le réseau privé que d’adresses publiques disponibles il fait du PAT
+> **overload**: il fait du PAT
 {.is-info}
 
 # Redirection d'un PORT vers IP Publique
