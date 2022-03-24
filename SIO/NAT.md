@@ -2,7 +2,7 @@
 title: NAT & PAT
 description: 
 published: true
-date: 2022-03-24T07:20:34.421Z
+date: 2022-03-24T07:21:05.182Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T14:26:14.583Z
