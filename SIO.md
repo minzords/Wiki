@@ -2,7 +2,7 @@
 title: Memo Cours
 description: 
 published: true
-date: 2022-03-24T07:40:50.225Z
+date: 2022-03-24T07:41:56.802Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-15T07:24:16.372Z
@@ -13,6 +13,7 @@ Memo Cours
 
 # Cours:
 - [NAT/PAT](/SIO/NAT-COURS)
+{.links-list}
 
 # Général:
 - [Memo Bash](/SIO/Bash)
