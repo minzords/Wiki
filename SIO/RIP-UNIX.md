@@ -2,7 +2,7 @@
 title: RIP sur UNIX (Routeur Logiciel)
 description: 
 published: true
-date: 2022-04-08T16:58:40.169Z
+date: 2022-04-08T17:07:46.385Z
 tags: 
 editor: markdown
 dateCreated: 2022-04-08T16:58:40.169Z
@@ -25,7 +25,7 @@ export all;             # Default is export none
 scan time 10;           # Scan interfaces every 10 seconds
 }
 >
->protocol direct {				# Export all directry connected network
+>protocol direct {				# Export all directly connected network
 export all;
 }
 > 
