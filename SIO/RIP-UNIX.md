@@ -2,7 +2,7 @@
 title: RIP sur UNIX (Routeur Logiciel)
 description: 
 published: true
-date: 2022-04-08T17:07:46.385Z
+date: 2022-04-09T13:50:25.205Z
 tags: 
 editor: markdown
 dateCreated: 2022-04-08T16:58:40.169Z
@@ -43,8 +43,8 @@ interface "*"{		# Listen on every interface
 - Voir le status des protocoles
 > sh protocols all
 
-![bird_shroute.png](/linux/rip-bird/bird_shroute.png)
+![bird_shrip.png](/linux/rip-bird/bird_shrip.png)
 - Voir les routes
 > sh route
 
-![bird_shrip.png](/linux/rip-bird/bird_shrip.png)
+![bird_shroute.png](/linux/rip-bird/bird_shroute.png)
