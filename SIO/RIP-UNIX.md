@@ -1,8 +1,8 @@
 ---
-title: RIP sur UNIX (Routeur Logiciel)
+title: RIP sur UNIX (Bird)
 description: 
 published: true
-date: 2022-04-09T13:50:25.205Z
+date: 2022-05-13T07:14:37.487Z
 tags: 
 editor: markdown
 dateCreated: 2022-04-08T16:58:40.169Z
