@@ -1,8 +1,8 @@
 ---
-title: Linux
+title: Linux / Unix
 description: 
 published: true
-date: 2022-03-16T12:59:05.995Z
+date: 2022-05-13T07:17:22.697Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:47:12.193Z
@@ -14,4 +14,8 @@ dateCreated: 2021-10-02T11:47:12.193Z
 - [Mises à jours avec Ansible](/Linux/mises-a-jours-avec-ansible)
 - [Installation de Portainer.io](/Linux/installation-portainerio)
 - [Changement du Subnet par défaut de Docker](/Linux/Changer-le-Subnet-Docker)
+{.links-list}
+
+# Routage
+- [RIP sur Bird](/Linux/RIP-UNIX)
 {.links-list}
