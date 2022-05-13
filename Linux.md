@@ -2,7 +2,7 @@
 title: Linux / Unix
 description: 
 published: true
-date: 2022-05-13T07:17:22.697Z
+date: 2022-05-13T07:18:29.368Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:47:12.193Z
@@ -17,5 +17,5 @@ dateCreated: 2021-10-02T11:47:12.193Z
 {.links-list}
 
 # Routage
-- [RIP sur Bird](/Linux/RIP-UNIX)
+- [RIP sur Bird](/Linux/RIP-Bird)
 {.links-list}
