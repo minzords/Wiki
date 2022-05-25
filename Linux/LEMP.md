@@ -2,7 +2,7 @@
 title: Installer un serveur LEMP sur debian 10 (nginx php mariadb)
 description: 
 published: true
-date: 2021-10-06T07:03:48.552Z
+date: 2022-05-25T15:01:57.113Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:45:31.996Z
@@ -43,7 +43,7 @@ Pour le reste des questions que le script vous pose, vous devez appuyer sur y, s
 # Installation de PHP:
 Nous avons le serveur Web, et la base de données il nous manque plus que Php, nous allons donc l'installer.
 
-`sudo apt install php-fpm php-mysql php-xml php-intl php-bz2 php-bcmath php-curl php-date php-zip`
+`apt install php-fpm php-mysql php-xml php-intl php-bz2 php-bcmath php-curl php-date php-zip`
 
 Voilà PHP est installé il nous reste plus qu'a le configuré
 
