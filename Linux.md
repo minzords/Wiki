@@ -2,7 +2,7 @@
 title: Linux / Unix
 description: 
 published: true
-date: 2022-05-13T07:18:29.368Z
+date: 2022-07-17T16:34:30.792Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:47:12.193Z
@@ -18,4 +18,8 @@ dateCreated: 2021-10-02T11:47:12.193Z
 
 # Routage
 - [RIP sur Bird](/Linux/RIP-Bird)
+{.links-list}
+
+# Divers essais
+- [Changer l'Init de Debian pour OpenRC](/Linux/Debian-OpenRC)
 {.links-list}
