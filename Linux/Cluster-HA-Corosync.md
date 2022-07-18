@@ -1,8 +1,8 @@
 ---
-title: Redondance sur Debian
+title: Créer un cluster HA avec corosync
 description: 
 published: true
-date: 2022-07-18T14:34:17.482Z
+date: 2022-07-18T14:36:10.746Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-18T14:34:17.482Z
