@@ -2,7 +2,7 @@
 title: Linux / Unix
 description: 
 published: true
-date: 2022-07-18T14:45:30.496Z
+date: 2022-07-18T15:02:27.318Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:47:12.193Z
@@ -22,6 +22,7 @@ dateCreated: 2021-10-02T11:47:12.193Z
 
 # Haute Disponibilité
 - [Créer un cluster HA avec corosync](/Linux/Cluster-HA-Corosync)
+- [Créer une IPFailover sur Corosync](/Linux/IPFailover-Corosync)
 {.links-list}
 
 # Divers essais
