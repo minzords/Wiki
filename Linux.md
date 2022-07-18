@@ -2,7 +2,7 @@
 title: Linux / Unix
 description: 
 published: true
-date: 2022-07-17T16:34:30.792Z
+date: 2022-07-18T14:45:30.496Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:47:12.193Z
@@ -18,6 +18,10 @@ dateCreated: 2021-10-02T11:47:12.193Z
 
 # Routage
 - [RIP sur Bird](/Linux/RIP-Bird)
+{.links-list}
+
+# Haute Disponibilité
+- [Créer un cluster HA avec corosync](/Linux/Cluster-HA-Corosync)
 {.links-list}
 
 # Divers essais
