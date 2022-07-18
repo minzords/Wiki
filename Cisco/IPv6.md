@@ -2,14 +2,14 @@
 title: Configurer Ipv6
 description: 
 published: true
-date: 2022-03-03T14:43:11.687Z
+date: 2022-07-18T16:07:17.688Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T08:26:16.265Z
 ---
 
 # Activer IPv6
-> R1(config)# interface serial0/0/0
+> R1(config)# ipv6 unicast-routing
 
 # Ajouter une adresse local
 > R1(config)# interface serial0/0/0
