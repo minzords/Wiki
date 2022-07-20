@@ -2,7 +2,7 @@
 title: Configurer l'IPv6
 description: 
 published: true
-date: 2022-07-18T16:14:59.462Z
+date: 2022-07-20T12:45:36.260Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T08:26:16.265Z
@@ -18,6 +18,10 @@ dateCreated: 2022-03-03T08:26:16.265Z
 # Ajouter une adresse
 > R1(config)# interface serial0/0/1
 > R1(config-if)# ipv6 address 2001:470:1d35::1/64
+
+# Ajouter une adresse eui-64
+> R1(config)# interface Fa0/0
+> R1(config-if)# ipv6 address 2001:db8:1:1::/64 eui-64
 
 # Avoir l'IPv6 via un tunnel GRE
 **address** est le bloc fourni par le fournisseur, 
