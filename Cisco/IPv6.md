@@ -2,7 +2,7 @@
 title: Configurer l'IPv6
 description: 
 published: true
-date: 2022-07-20T12:45:36.260Z
+date: 2022-07-20T12:48:17.575Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T08:26:16.265Z
@@ -37,3 +37,11 @@ dateCreated: 2022-03-03T08:26:16.265Z
 >   tunnel mode ipv6ip
 > ipv6 route ::/0 Tunnel0
 {.is-info}
+
+# DHCPv6
+> R1(config)# ipv6 dhcp pool sansetat
+R1(config-DHCP)# dns-server 2001:DB8:54:1::53
+R1(config)# interface fa0
+R1(config-if)# ipv6 address 2001:DB8:54:1:/64 eui-64
+R1(config-if)# ipv6 dhcp server sansetat
+R1(config-if)# ipv6 nd other-config-flag
