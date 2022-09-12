@@ -2,8 +2,8 @@
 title: Création de l'Autorité de certification + HTTPS
 description: 
 published: true
-date: 2022-09-12T08:43:47.017Z
-tags: 
+date: 2022-09-12T08:44:09.747Z
+tags: ca, https
 editor: markdown
 dateCreated: 2022-09-12T08:39:44.219Z
 ---
