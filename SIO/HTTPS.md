@@ -2,7 +2,7 @@
 title: Création de l'Autorité de certification + HTTPS
 description: 
 published: true
-date: 2022-09-12T09:15:39.564Z
+date: 2022-09-12T09:16:19.725Z
 tags: ca, https
 editor: markdown
 dateCreated: 2022-09-12T08:39:44.219Z
@@ -21,7 +21,7 @@ dateCreated: 2022-09-12T08:39:44.219Z
   > echo "01" > /etc/ssl/serial
   
 ## Création de la clé RSA privée
-> openssl genrsa -des3 -out private/cakey.pem 4096
+> openssl genrsa -des3 -out /etc/ssl/private/cakey.pem 4096
 
 ## Création du Certificat d'Autorité
 > openssl req -new -x509 -days 365 -key /etc/ssl/cakey.pem -out /etc/ssl/cacert.pem
