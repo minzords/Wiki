@@ -2,7 +2,7 @@
 title: Créer un cluster HA avec corosync
 description: 
 published: true
-date: 2022-07-18T14:36:10.746Z
+date: 2022-09-12T15:11:51.074Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-18T14:34:17.482Z
@@ -15,7 +15,7 @@ dateCreated: 2022-07-18T14:34:17.482Z
 > corosync-keygen
 
 La clé est généré dans /etc/corosync/authkey , **il faudra la copié sur l'autres machine du nœud**.
-> scp /etc/corosync/corosync.conf root@10.0.1.2:/etc/corosync/
+> scp /etc/corosync/authkey root@10.0.1.2:/etc/corosync/
 
 # Configuration de Corosync
 > rm /etc/corosync/corosync.conf && vi /etc/corosync/corosync.conf
