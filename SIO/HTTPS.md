@@ -2,7 +2,7 @@
 title: Création de l'Autorité de certification + HTTPS
 description: 
 published: true
-date: 2022-09-12T14:03:24.652Z
+date: 2022-09-12T14:05:45.645Z
 tags: ca, https
 editor: markdown
 dateCreated: 2022-09-12T08:39:44.219Z
@@ -46,8 +46,8 @@ dateCreated: 2022-09-12T08:39:44.219Z
       `  RewriteEngine On`
       `  RewriteCond %{HTTPS} !=on
       RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]`
-	`</VirtualHost>`
-
+	 `</VirtualHost>`
+   
     <IfModule mod_ssl.c>
       <VirtualHost _default_:443>
         ServerName  domaine.local
