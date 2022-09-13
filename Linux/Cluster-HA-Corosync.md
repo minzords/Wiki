@@ -2,7 +2,7 @@
 title: Créer un cluster HA avec corosync
 description: 
 published: true
-date: 2022-09-12T15:11:51.074Z
+date: 2022-09-13T09:25:08.683Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-18T14:34:17.482Z
@@ -96,3 +96,7 @@ A faire sur tous les serveurs
 
 # Désactiver Quorum (seulement quand il y a que 2 serveurs)
 > crm configure property no-quorum-policy="ignore"
+
+# Activation / Désactivation d'un node
+> crm node standby
+> crm node online
