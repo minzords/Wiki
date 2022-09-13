@@ -2,7 +2,7 @@
 title: Créer une IPFailover sur Corosync
 description: 
 published: true
-date: 2022-07-18T15:01:53.901Z
+date: 2022-09-13T08:51:30.106Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-18T15:01:53.901Z
@@ -20,3 +20,6 @@ L'ip failover dans cette sera **10.0.1.3/24** et l'interface réseau est **ens32
 > crm configure primitive serviceWeb lsb:apache2 op monitor interval=60s op start interval=0 timeout=60s op stop interval=0 timeout=60s
 
 Corosync va regarder toutes les 60 secondes le status d'apache.
+
+# Grouper les ressources
+> crm configure group servweb IPFailover serviceWeb meta migration-threshold="5"
