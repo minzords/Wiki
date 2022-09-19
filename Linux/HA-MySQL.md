@@ -2,7 +2,7 @@
 title: HA sur MySQL
 description: 
 published: true
-date: 2022-09-19T12:23:24.405Z
+date: 2022-09-19T12:43:03.646Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-18T15:49:39.714Z
@@ -88,7 +88,7 @@ Dans cet exemple, la base répliqué sera qwerty.
 # Définition de l'esclave sur Mysql
 `mysql -p`
 
-`CHANGE MASTER TO MASTER_HOST='172.16.0.10', MASTER_USER='ha', MASTER_PASSWORD='qwerty123', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=328;`
+`CHANGE MASTER TO MASTER_HOST='10.0.1.10', MASTER_USER='ha', MASTER_PASSWORD='qwerty123', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=328;`
 
 `START SLAVE;`
 `EXIT;`
