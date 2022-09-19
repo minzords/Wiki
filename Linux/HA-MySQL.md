@@ -2,7 +2,7 @@
 title: HA sur MySQL
 description: 
 published: true
-date: 2022-09-19T12:07:29.430Z
+date: 2022-09-19T12:14:51.573Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-18T15:49:39.714Z
@@ -82,13 +82,16 @@ Dans cet exemple, la base répliqué sera qwerty.
 ## Redémarrer Mysql
 `/etc/init.d/mariadb restart`
 
+## Arrêté l'esclave
+`STOP SLAVE;`
+
 # Définition de l'esclave sur Mysql
 `mysql -p`
 
-`change master to master_host='10.0.1.1', master_user='ha', master_password='qwerty123', master_log_file='mysql-bin.000001', master_log_pos=3921;`
+`change master to master_host='10.0.1.1', master_user='ha', master_password='qwerty123', master_log_file='mysql-bin.000001', master_log_pos=328;`
 
-`start slave;`
-`exit;`
+`START SLAVE;`
+`EXIT;`
 
 # Réactiver l'écriture sur le maître
 `mysql -p`
