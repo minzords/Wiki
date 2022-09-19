@@ -2,7 +2,7 @@
 title: HA sur MySQL
 description: 
 published: true
-date: 2022-09-19T11:57:22.099Z
+date: 2022-09-19T12:07:02.172Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-18T15:49:39.714Z
@@ -94,3 +94,7 @@ Dans cet exemple, la base répliqué sera qwerty.
 `mysql -p`
 `UNLOCK TABLES;`
 `EXIT;`
+
+# Vérification
+`SHOW MASTER STATUS;`
+Sur le maitre.
