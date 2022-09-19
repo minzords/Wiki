@@ -2,7 +2,7 @@
 title: HA sur MySQL
 description: 
 published: true
-date: 2022-09-19T12:07:02.172Z
+date: 2022-09-19T12:07:29.430Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-18T15:49:39.714Z
@@ -97,4 +97,4 @@ Dans cet exemple, la base répliqué sera qwerty.
 
 # Vérification
 `SHOW MASTER STATUS;`
-Sur le maitre.
+Sur le maître.
