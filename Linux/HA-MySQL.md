@@ -2,7 +2,7 @@
 title: HA sur MySQL
 description: 
 published: true
-date: 2022-09-19T13:10:09.354Z
+date: 2022-09-19T13:30:36.435Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-18T15:49:39.714Z
@@ -117,3 +117,7 @@ Sur le maître.
 
 ## Sur l'esclave
 `CHANGE MASTER TO MASTER_HOST='10.0.1.11', MASTER_USER='ha', MASTER_PASSWORD='qwerty123', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=526;`
+
+## Ajout au cluster
+`crm configure primitive serviceMYSQL ocf:heartbeat:mysql params socket=/var/run/mysqld/mysqld.sock`
+`crm configure clone cServiceMySQL serviceMySQL`
