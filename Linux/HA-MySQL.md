@@ -2,7 +2,7 @@
 title: HA sur MySQL
 description: 
 published: true
-date: 2022-07-18T15:49:39.714Z
+date: 2022-09-19T10:00:17.762Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-18T15:49:39.714Z
@@ -12,7 +12,7 @@ Dans cet exemple, la base répliqué sera qwerty.
 
 # Création d'un compte SQL
 `CREATE USER 'ha'@'%' IDENTIFIED BY 'qwerty123';`
-`GRANT ALL PRIVILEGES ON *.* TO 'ha'@'%';`
+`GRANT REPLICATION SLAVE ON *.* TO 'ha'@'%';`
 `FLUSH PRIVILEGES;`
 `EXIT;`
 
