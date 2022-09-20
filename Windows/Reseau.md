@@ -2,7 +2,7 @@
 title: Commandes Réseau
 description: 
 published: true
-date: 2022-09-20T07:33:37.128Z
+date: 2022-09-20T07:33:59.479Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-16T08:49:22.074Z
@@ -35,9 +35,7 @@ dateCreated: 2021-12-16T08:49:22.074Z
 
 # Config l'IP en manuel
 ## IPv4
-> netsh interface ip set address name="Connexion au réseau local" static 10.1.2.220 255.255.255.0 10.1.2.254
-> IP: 10.1.2.220 Masque: 255.255.255.0 Passerelle: 10.1.2.254
-{.is-info}
+> netsh interface ip set address "Connexion au réseau local" static 10.1.2.220/24 10.1.2.254
 
 ## IPv6
 > netsh interface ipv6 add address "Connexion au réseau local" 2001:db8:290c:1291::1
