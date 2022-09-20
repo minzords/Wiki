@@ -2,7 +2,7 @@
 title: Installation d'un DNS Avec Bind
 description: 
 published: true
-date: 2022-09-20T08:04:33.388Z
+date: 2022-09-20T08:06:10.829Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-20T08:04:33.388Z
@@ -41,4 +41,21 @@ dateCreated: 2022-09-20T08:04:33.388Z
 >ns2	IN	A 		10.0.1.2
 >ns2	IN	A			10.0.1.3
 >www	IN	CNAME	mandriva.com.
+{.is-success}
+
+
+# Mises en place du Forward
+`vi /etc/bind/named.conf.options`
+
+>options {
+>	directory "/var/cache/bind";
+>
+>	forwarders {
+>	 	8.8.8.8;
+>	};
+>
+>	dnssec-validation auto;
+>
+>	listen-on-v6 { any; };
+>};
 {.is-success}
