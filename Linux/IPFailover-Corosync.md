@@ -2,13 +2,13 @@
 title: Créer une IPFailover sur Corosync
 description: 
 published: true
-date: 2022-09-13T08:51:30.106Z
+date: 2022-09-20T12:44:27.308Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-18T15:01:53.901Z
 ---
 
-L'ip failover dans cette sera **10.0.1.3/24** et l'interface réseau est **ens32**.
+L'ip failover sera **10.0.1.3/24** et l'interface réseau est **ens32**.
 
 # Ajouter de l'IPFailover
 > `crm configure primitive IPFailover ocf:heartbeat:IPaddr2 params ip=10.0.1.3 cidr_netmask=24 nic=ens32 iflabel=VIP`
