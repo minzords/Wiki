@@ -2,7 +2,7 @@
 title: Commandes Réseau
 description: 
 published: true
-date: 2021-12-16T08:51:42.948Z
+date: 2022-09-20T06:52:49.344Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-16T08:49:22.074Z
@@ -11,7 +11,7 @@ dateCreated: 2021-12-16T08:49:22.074Z
 # Afficher la configuration complète des cartes réseau
 > ipconfig /all
 
-# Libèrer l'IP
+# Libérer l'IP
 > ipconfig /release
 
 # Renouveler l'adresse IP
