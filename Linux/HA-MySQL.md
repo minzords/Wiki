@@ -2,7 +2,7 @@
 title: HA sur MySQL
 description: 
 published: true
-date: 2022-09-19T13:57:39.034Z
+date: 2022-09-20T14:34:26.726Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-18T15:49:39.714Z
@@ -53,6 +53,9 @@ Dans cet exemple, la base répliqué sera qwerty.
 # Bloquer l'écriture
 `mysql -p`
 `FLUSH TABLES WITH READ LOCK;`
+
+# Voir la position.
+`show master status;`
 
 
 
