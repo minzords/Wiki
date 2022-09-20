@@ -2,7 +2,7 @@
 title: Installation d'un DNS Avec Bind
 description: 
 published: true
-date: 2022-09-20T08:06:10.829Z
+date: 2022-09-20T08:06:30.781Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-20T08:04:33.388Z
@@ -50,6 +50,7 @@ dateCreated: 2022-09-20T08:04:33.388Z
 >options {
 >	directory "/var/cache/bind";
 >
+> // Forward sur le DNS 8.8.8.8
 >	forwarders {
 >	 	8.8.8.8;
 >	};
