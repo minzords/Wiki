@@ -2,13 +2,16 @@
 title: HA sur MySQL
 description: 
 published: true
-date: 2022-09-20T14:34:26.726Z
+date: 2022-09-20T14:35:46.781Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-18T15:49:39.714Z
 ---
 
 Dans cet exemple, la base répliqué sera qwerty.
+
+# Ajout de la détection pour l'IP FO
+`crm configure group servsql IPFailover serveursql meta migration-threshold="5"`
 
 # Création d'un compte SQL
 `CREATE USER 'ha'@'%' IDENTIFIED BY 'qwerty123';`
