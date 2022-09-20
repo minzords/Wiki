@@ -2,7 +2,7 @@
 title: Configuration de DNSSEC sur BIND
 description: 
 published: true
-date: 2022-09-20T09:53:31.385Z
+date: 2022-09-20T09:55:22.508Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-20T09:53:31.385Z
@@ -14,12 +14,13 @@ dateCreated: 2022-09-20T09:53:31.385Z
 `vi /etc/bind/named.conf.options`
 
 > dnssec-enable yes;
+{.is-success}
 
 # Création des clés
 cd /etc/bind/keys
 ZSK:
-
 `dnssec-keygen -a RSASHA512 -b 4096 -n zone mandriva.com`
+
 KSK
 `dnssec-keygen -a RSASHA512 -b 4096 -f KSK -n zone mandriva.com`
 
@@ -33,6 +34,7 @@ KSK
 >
 >; ZSK
 >$include "keys/Kmandriva.com.+010+41723.key";
+{.is-success}
 
 # Signature
 
