@@ -2,7 +2,7 @@
 title: Installation d'un DNS Avec Bind
 description: 
 published: true
-date: 2022-09-20T08:06:30.781Z
+date: 2022-09-20T08:19:29.440Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-20T08:04:33.388Z
@@ -43,6 +43,24 @@ dateCreated: 2022-09-20T08:04:33.388Z
 >www	IN	CNAME	mandriva.com.
 {.is-success}
 
+## Zone inverser
+`vi /var/cache/bind/db.10.0.1.0.rev`
+
+>$TTL    86400
+>@       IN      SOA     ns1.mandriva.com. ns2.mandriva.com. (
+>                   2022092001           ; Serial
+>                         3600           ; Refresh [1h]
+>                          600           ; Retry   [10m]
+>                        86400           ; Expire  [1d]
+>                          600 )         ; Negative Cache TTL [1h]
+>
+>@       	IN      NS      ns1.mandriva.com.
+>@				IN			NS			ns2.mandriva.com.
+>
+>1	 		IN 	PTR 	mandriva.com.
+>2			IN	PTR		ns1.mandriva.com.
+>3			IN	PTR		ns2.mandriva.com.
+{.is-success}
 
 # Mises en place du Forward
 `vi /etc/bind/named.conf.options`
