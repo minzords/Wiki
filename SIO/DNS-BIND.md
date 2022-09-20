@@ -2,7 +2,7 @@
 title: Installation d'un DNS Avec Bind
 description: 
 published: true
-date: 2022-09-20T08:58:59.514Z
+date: 2022-09-20T08:59:30.218Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-20T08:04:33.388Z
@@ -90,7 +90,7 @@ dateCreated: 2022-09-20T08:04:33.388Z
 >	masters { 10.0.1.2; };
 >};
 >
->zone "0.16.172.in-addr.arpa" {
+>zone "1.0.10.in-addr.arpa" {
 >	type slave;
 >	file "slave/db.10.0.1.0.rev";
 >	masters { 10.0.1.2; };
