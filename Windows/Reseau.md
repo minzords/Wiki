@@ -2,7 +2,7 @@
 title: Commandes Réseau
 description: 
 published: true
-date: 2022-09-20T06:52:49.344Z
+date: 2022-09-20T07:32:49.328Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-16T08:49:22.074Z
@@ -45,7 +45,8 @@ dateCreated: 2021-12-16T08:49:22.074Z
 # Config DNS
 ## DNS Primaire
 ### IPv4
-> netsh interface ip set dns name="Connexion au réseau local" static 207.164.234.129
+> netsh interface ip set address "Connexion au réseau local" static 10.1.2.220/24 10.1.2.254
+
 ### IPv6
 > netsh interface ip set dns name="Connexion au réseau local" static 2620:10A:80BB::10
 ## DNS Secondaire
