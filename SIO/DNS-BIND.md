@@ -2,7 +2,7 @@
 title: Installation d'un DNS Avec Bind
 description: 
 published: true
-date: 2022-09-20T08:19:29.440Z
+date: 2022-09-20T08:58:59.514Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-20T08:04:33.388Z
@@ -15,12 +15,14 @@ dateCreated: 2022-09-20T08:04:33.388Z
 >zone "mandriva.com" {
 >	type master;
 >	file "db.mandriva.com";
+> allow-transfer { 10.0.1.3; };
 >};
 >
 > // Zone inverser du réseau 10.0.1.0
 >zone "1.0.10.in-addr.arpa" {
 >	type master;
 >	file "db.10.0.1.0.rev"
+> allow-transfer { 10.0.1.3; };
 >};
 {.is-success}
 
@@ -38,7 +40,7 @@ dateCreated: 2022-09-20T08:04:33.388Z
 >@				IN			NS			ns2.mandriva.com.
 >
 >@ 		IN 	A 		10.0.1.1
->ns2	IN	A 		10.0.1.2
+>ns1	IN	A 		10.0.1.2
 >ns2	IN	A			10.0.1.3
 >www	IN	CNAME	mandriva.com.
 {.is-success}
@@ -78,3 +80,25 @@ dateCreated: 2022-09-20T08:04:33.388Z
 >	listen-on-v6 { any; };
 >};
 {.is-success}
+
+## Configuration de l'esclave
+`vi /etc/bind/named.conf.local`
+
+>zone "mandriva.com" {
+>	type slave;
+>	file "slave/db.mandriva.ca";
+>	masters { 10.0.1.2; };
+>};
+>
+>zone "0.16.172.in-addr.arpa" {
+>	type slave;
+>	file "slave/db.10.0.1.0.rev";
+>	masters { 10.0.1.2; };
+>};
+{.is-success}
+
+`mkdir /var/cache/bind/slave`
+`chown -R bind:bind /var/cache/bind/slave`
+
+## Commande de Debug
+`named -g`
