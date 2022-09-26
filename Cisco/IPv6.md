@@ -2,7 +2,7 @@
 title: Configurer l'IPv6
 description: 
 published: true
-date: 2022-09-26T12:25:43.442Z
+date: 2022-09-26T13:31:13.068Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T08:26:16.265Z
@@ -48,6 +48,9 @@ R1(config-if)# ipv6 nd other-config-flag
 
 # DHCP Relay
 > R1(config-if)#ipv6 dhcp relay destination @IPv6_serveur-DHCP
+
+# Route
+> R1(config)# ipv6 route ::/0 fc00::1
 
 # SHOW IPv6
 >R1(config)# show ipv6 interface brief
