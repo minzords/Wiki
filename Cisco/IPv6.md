@@ -2,7 +2,7 @@
 title: Configurer l'IPv6
 description: 
 published: true
-date: 2022-07-20T12:48:17.575Z
+date: 2022-09-26T09:26:40.856Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T08:26:16.265Z
@@ -45,3 +45,6 @@ R1(config)# interface fa0
 R1(config-if)# ipv6 address 2001:DB8:54:1:/64 eui-64
 R1(config-if)# ipv6 dhcp server sansetat
 R1(config-if)# ipv6 nd other-config-flag
+
+# SHOW IPv6
+>R1(config)# show ipv6 interface brief
