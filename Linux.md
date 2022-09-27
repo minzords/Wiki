@@ -2,7 +2,7 @@
 title: Linux / Unix
 description: 
 published: true
-date: 2022-07-18T15:50:40.397Z
+date: 2022-09-27T10:56:32.338Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:47:12.193Z
@@ -14,6 +14,11 @@ dateCreated: 2021-10-02T11:47:12.193Z
 - [Mises à jours avec Ansible](/Linux/mises-a-jours-avec-ansible)
 - [Installation de Portainer.io](/Linux/installation-portainerio)
 - [Changement du Subnet par défaut de Docker](/Linux/Changer-le-Subnet-Docker)
+{.links-list}
+
+# DNS
+- [Mises en place d'un DNS avec Bind](/Linux/DNS-BIND)
+- [Mises en place de DNSSEC sur Bind](/Linux/DNS-BIND6DNSSEC)
 {.links-list}
 
 # Routage
