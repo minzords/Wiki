@@ -2,13 +2,14 @@
 title: HAProxy
 description: 
 published: true
-date: 2022-10-03T14:23:54.352Z
+date: 2022-10-03T14:25:33.517Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-03T14:23:54.352Z
 ---
 
-# Configuration des sites
+# Version Simple
+## Configuration des sites
 `vi /etc/haproxy/haproxy.cfg`
 
 > listen httpProxy
@@ -20,7 +21,7 @@ dateCreated: 2022-10-03T14:23:54.352Z
 > server serv2 10.0.1.2:80 check
 {.is-success}
 
-# Mise en place des statistiques
+## Mise en place des statistiques
 `vi /etc/haproxy/haproxy.cfg`
 > stats uri /statsHaproxy
 > stats auth root:Qwerty123
