@@ -2,7 +2,7 @@
 title: HAProxy
 description: 
 published: true
-date: 2022-10-03T14:25:33.517Z
+date: 2022-10-03T14:42:48.948Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-03T14:23:54.352Z
@@ -27,6 +27,13 @@ dateCreated: 2022-10-03T14:23:54.352Z
 > stats auth root:Qwerty123
 > stats refresh 30s
 {.is-success}
+
+## Répartition inégalitaire
+
+> server web1 10.0.1.1:80 weight 100 check
+> server web2 10.0.1.2:80 weight 50 check
+{.is-success}
+
 
 # Utilisation du frontend/backend
 > frontend proxypublic
