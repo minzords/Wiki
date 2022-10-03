@@ -2,7 +2,7 @@
 title: HAProxy
 description: 
 published: true
-date: 2022-10-03T14:49:32.943Z
+date: 2022-10-03T14:52:44.532Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-03T14:23:54.352Z
@@ -53,7 +53,7 @@ dateCreated: 2022-10-03T14:23:54.352Z
 > bind 172.16.0.13:80
 > default_backend fermeweb
 > backend fermeweb
-> alance roundrobin
+> balance roundrobin
 > option httpclose
 > option httpchk HEAD / HTTP/1.0
 > server web1 10.0.1.1:80 check
