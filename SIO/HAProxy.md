@@ -2,7 +2,7 @@
 title: HAProxy
 description: 
 published: true
-date: 2022-10-03T14:42:48.948Z
+date: 2022-10-03T14:49:32.943Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-03T14:23:54.352Z
@@ -34,6 +34,19 @@ dateCreated: 2022-10-03T14:23:54.352Z
 > server web2 10.0.1.2:80 weight 50 check
 {.is-success}
 
+## HTTPS
+> mkdir /etc/haproxy/cert
+> cd /etc/haproxy/cert
+> openssl genrsa -out privateKey.pem 4096
+> openssl req -new -x509 -days 365 -key privateKey.pem -out cert.pem
+> cat cert.pem privateKey.pem > sodecaf.pem
+{.is-success}
+
+`vi /etc/haproxy/haproxy.cfg`
+> frontend https-in
+> bind 172.16.0.13:443 ssl crt /etc/haproxy/cert/sodecaf.pem
+> default_backend fermeweb
+{.is-success}
 
 # Utilisation du frontend/backend
 > frontend proxypublic
