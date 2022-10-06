@@ -2,14 +2,14 @@
 title: Bienvenue sur le Wiki
 description: 
 published: true
-date: 2022-07-20T12:52:35.743Z
+date: 2022-10-06T07:01:08.867Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-29T16:38:43.742Z
 ---
 
 # Administration Système
-- [Linux](/Linux)
+- [Unix/Linux](/Linux)
 - [Windows](/Windows)
 {.links-list}
 # Administration Réseau
