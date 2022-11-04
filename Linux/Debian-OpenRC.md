@@ -2,7 +2,7 @@
 title: Changer l'Init de Debian pour OpenRC
 description: 
 published: true
-date: 2022-07-17T16:33:52.967Z
+date: 2022-11-04T13:35:02.340Z
 tags: openrc, debian
 editor: markdown
 dateCreated: 2022-07-17T16:33:52.967Z
