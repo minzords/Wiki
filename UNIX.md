@@ -2,7 +2,7 @@
 title: UNIX (LINUX & BSD)
 description: 
 published: true
-date: 2022-11-04T13:40:20.806Z
+date: 2022-11-04T13:44:29.717Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:47:12.193Z
@@ -19,7 +19,7 @@ dateCreated: 2021-10-02T11:47:12.193Z
 
 # DNS
 - [Mises en place d'un DNS avec Bind](/UNIX/DNS-BIND)
-- [Mises en place de DNSSEC sur Bind](/UNIX/DNS-BIND6DNSSEC)
+- [Mises en place de DNSSEC sur Bind](/UNIX/DNS-BIND-DNSSEC)
 {.links-list}
 
 # Routage
