@@ -2,7 +2,7 @@
 title: Mises à jours avec Ansible
 description: 
 published: true
-date: 2021-10-15T18:18:34.162Z
+date: 2022-11-04T13:36:23.041Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-15T18:18:31.319Z
