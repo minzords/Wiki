@@ -2,7 +2,7 @@
 title: Installation d'un DNS Avec Bind
 description: 
 published: true
-date: 2022-09-27T15:00:35.358Z
+date: 2022-11-04T13:31:33.520Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-20T08:04:33.388Z
