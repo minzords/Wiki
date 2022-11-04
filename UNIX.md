@@ -1,8 +1,8 @@
 ---
-title: Linux / Unix
+title: UNIX (LINUX & BSD)
 description: 
 published: true
-date: 2022-11-04T13:30:21.295Z
+date: 2022-11-04T13:38:51.015Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:47:12.193Z
