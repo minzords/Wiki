@@ -2,7 +2,7 @@
 title: Création de l'Autorité de certification + HTTPS
 description: 
 published: true
-date: 2022-09-20T15:18:53.084Z
+date: 2022-11-04T13:27:25.528Z
 tags: ca, https
 editor: markdown
 dateCreated: 2022-09-12T08:39:44.219Z
@@ -62,8 +62,8 @@ dateCreated: 2022-09-12T08:39:44.219Z
         SSLCertificateKeyFile /etc/ssl/private/webkey.pem
       </VirtualHost>
     </IfModule>
-
-# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+    
+	# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 
 
 
