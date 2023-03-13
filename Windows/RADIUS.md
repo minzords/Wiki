@@ -2,14 +2,15 @@
 title: Server Radius
 description: 
 published: true
-date: 2023-03-13T11:04:28.328Z
+date: 2023-03-13T11:04:52.017Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-13T11:04:28.328Z
 ---
 
 # Installation des rôles
-1. Installer le rôle "Services de certificats Active Directory" et "Services de stratégie et d'accès réseau"
+
+Installer le rôle "Services de certificats Active Directory" et "Services de stratégie et d'accès réseau"
 
 # Création de l'autorité de certification
 ![1.png](/radius/7.png)
