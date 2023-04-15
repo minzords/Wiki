@@ -2,7 +2,7 @@
 title: UNIX (LINUX & BSD)
 description: 
 published: true
-date: 2022-11-04T13:44:29.717Z
+date: 2023-04-15T18:36:23.874Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:47:12.193Z
@@ -22,14 +22,18 @@ dateCreated: 2021-10-02T11:47:12.193Z
 - [Mises en place de DNSSEC sur Bind](/UNIX/DNS-BIND-DNSSEC)
 {.links-list}
 
-# Routage
-- [RIP sur Bird](/UNIX/RIP-Bird)
-{.links-list}
-
 # Haute Disponibilité
 - [Créer un cluster HA avec corosync](/UNIX/Cluster-HA-Corosync)
 - [Créer une IPFailover sur Corosync](/UNIX/IPFailover-Corosync)
 - [Redondance sur MySQL](/UNIX/HA-MySQL)
+{.links-list}
+
+# Routage
+- [RIP sur Bird](/UNIX/RIP-Bird)
+{.links-list}
+
+# VOIP
+- [Cluster Asterisk](/UNIX/Cluster-Asterisk)
 {.links-list}
 
 # Divers essais
