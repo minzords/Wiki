@@ -2,7 +2,7 @@
 title: Installer un serveur LEMP sur debian 10 (nginx php mariadb)
 description: 
 published: true
-date: 2022-11-04T13:31:58.619Z
+date: 2023-04-15T18:44:17.893Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:45:31.996Z
@@ -58,28 +58,30 @@ Nous allons maintenant créer la nôtre: (Remplacer {monsite.domain} par votre s
 
 Bien maintenant vous allez copier cette configuration: (Remplacer {monsite.domain} par votre site ou un nom).
 
-> server {
->    listen              80;
->    listen              [::]:80;
-> 
->    server_name   {monsite.domain};
-> 
->    root                /var/www/{monsite.domain};
->    index              index.php;
-> 
->    gzip                off;
-> 
->    location / {
->        try_files $uri $uri/ =404;
->    }
-> 
->    location ~ \.php$ {
->        try_files $uri =404;  
->        fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
->        include fastcgi_params;
->        fastcgi_param SCRIPT_FILENAME $request_filename;
->    }
-> }
+```
+server {
+    listen              80;
+    listen              [::]:80;
+ 
+    server_name   {monsite.domain};
+ 
+    root                /var/www/{monsite.domain};
+    index              index.php;
+ 
+    gzip                off;
+ 
+    location / {
+        try_files $uri $uri/ =404;
+    }
+ 
+    location ~ \.php$ {
+        try_files $uri =404;  
+        fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $request_filename;
+    }
+ }
+```
 
 Nous allons donc activer cette configuration:
 
