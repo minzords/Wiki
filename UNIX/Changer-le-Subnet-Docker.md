@@ -2,7 +2,7 @@
 title: Changement du Subnet par défaut de Docker
 description: 
 published: true
-date: 2022-11-04T13:37:34.893Z
+date: 2023-04-15T18:45:18.741Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-16T12:52:04.812Z
@@ -12,23 +12,25 @@ dateCreated: 2022-03-16T12:52:04.812Z
 Dans cette exemple je vais utiliser le subnet **10.0.1.0/24**. 
 
 Pour paramétrer docker, il faut modifier le subnet dans le fichier **/etc/docker/daemon.json** si ce fichier n'existe pas il faut le créer.
-> vi **/etc/docker/daemon.json**
+`vi /etc/docker/daemon.json`
 
 Et rajouté ces lignes.
 
-> {
-> "bip": "10.0.1.1/24"
-> }
+```
+	{
+ "bip": "10.0.1.1/24"
+ }
+```
 
 # Redémarrer Docker
 Dans cet exemple je vais utiliser une distribution qui utilise Systemd comme système d'Init.
 
-> systemctl restart docker
+`systemctl restart docker`
 
 # Vérifié le réseau
 Vous pouvez vérifier le réseau utilisé par docker avec la commande **ip a**. 
 
-> ip a
+`ip a`
 
 ## Résultat:
 > 3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
