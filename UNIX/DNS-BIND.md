@@ -2,7 +2,7 @@
 title: Installation d'un DNS Avec Bind
 description: 
 published: true
-date: 2023-04-15T18:47:49.119Z
+date: 2023-04-15T18:48:43.655Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-20T08:04:33.388Z
@@ -38,13 +38,13 @@ $TTL    86400
                         86400           ; Expire  [1d]
                           600 )         ; Negative Cache TTL [1h]
 
-@       	IN      NS      ns1.mandriva.com.
+@        IN      NS      ns1.mandriva.com.
 @				IN			NS			ns2.mandriva.com.
 
-@ 		IN 	A 		10.0.1.1
-ns1	IN	A 		10.0.1.2
-ns2	IN	A			10.0.1.3
-www	IN	CNAME	mandriva.com.
+@ 		 IN  A 		10.0.1.1
+ns1		IN	A 		10.0.1.2
+ns2		IN	A			10.0.1.3
+www		IN	CNAME	mandriva.com.
 ```
 
 ## Zone inverser
