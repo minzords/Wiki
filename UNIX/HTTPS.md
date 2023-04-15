@@ -2,7 +2,7 @@
 title: Création de l'Autorité de certification + HTTPS
 description: 
 published: true
-date: 2023-04-15T18:41:46.384Z
+date: 2023-04-15T18:43:15.830Z
 tags: ca, https
 editor: markdown
 dateCreated: 2022-09-12T08:39:44.219Z
@@ -19,9 +19,9 @@ dateCreated: 2022-09-12T08:39:44.219Z
    ```
  
    ### Création des dossiers
-  	`mkdir /etc/ssl/newcerts`
-  	`touch /etc/ssl/index.txt`
-  	`echo "01" > /etc/ssl/serial`
+  `mkdir /etc/ssl/newcerts`
+  `touch /etc/ssl/index.txt`
+  `echo "01" > /etc/ssl/serial`
   
 ## Création de la clé RSA privée
 `openssl genrsa -des3 -out /etc/ssl/private/cakey.pem 4096`
@@ -31,16 +31,16 @@ dateCreated: 2022-09-12T08:39:44.219Z
 
 ## Serveur Web
   ### Création de la clé RSA privée
-  	`openssl genrsa -out /etc/ssl/private/webkey.pem 4096`
+  `openssl genrsa -out /etc/ssl/private/webkey.pem 4096`
   ### Demandé le certificat
-  	`openssl req -new -key /etc/ssl/private/webkey.pem -out /etc/ssl/web_dem.pem`
+  `openssl req -new -key /etc/ssl/private/webkey.pem -out /etc/ssl/web_dem.pem`
   
   ### Envoi du certificat
-  	`scp web_dem.pem root@172.16.0.20:/root`
+  `scp web_dem.pem root@172.16.0.20:/root`
   
 ## Server CA
    ### Signer le certificat
-   	`openssl ca -policy policy_anything -out /etc/ssl/certs/servwebcert.pem -infiles /root/web_dem.pem`
+   `openssl ca -policy policy_anything -out /etc/ssl/certs/servwebcert.pem -infiles /root/web_dem.pem`
    
 # Configuration d'Apache   
    ```<VirtualHost *:80>
