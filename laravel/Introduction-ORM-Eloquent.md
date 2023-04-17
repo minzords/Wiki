@@ -2,7 +2,7 @@
 title: Introduction à l'ORM Eloquent
 description: 
 published: true
-date: 2023-04-17T14:35:32.997Z
+date: 2023-04-17T14:36:32.515Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T14:07:15.455Z
@@ -54,6 +54,6 @@ Si la condition n'est pas remplie, il va renvoyer une erreur 404.
 # Le WHERE
 ```php
 	// trouver un article par son title
-  $posts = Post::where('title', '=', 'Omnis voluptatem quam dignissimos voluptatem cumque nemo.')->first();
+  $posts = Post::where('title', '=', 'Omnis voluptatem quam dignissimos voluptatem cumque nemo.')->firstorfail();
 
 ```
