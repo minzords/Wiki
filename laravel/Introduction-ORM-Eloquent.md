@@ -2,7 +2,7 @@
 title: Introduction à l'ORM Eloquent
 description: 
 published: true
-date: 2023-04-17T14:27:26.106Z
+date: 2023-04-17T14:31:45.543Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T14:07:15.455Z
@@ -43,4 +43,11 @@ Laravel fournie une fonction pour debug, elle va afficher toutes les information
 	// Récupération du post qui a l'id 1
   $posts = Post::find(1);
 ```
+
+# Le FindOrFail
+```php
+	// trouver un article par son id
+  $posts = Post::findorfail(81);
+```
+Si la condition n'est pas remplie, il va renvoyer une erreur 404.
 
