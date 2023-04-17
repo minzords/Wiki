@@ -2,7 +2,7 @@
 title: Introduction à l'ORM Eloquent
 description: 
 published: true
-date: 2023-04-17T14:36:32.515Z
+date: 2023-04-17T15:38:36.749Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T14:07:15.455Z
@@ -50,6 +50,11 @@ Laravel fournie une fonction pour debug, elle va afficher toutes les information
   $posts = Post::findorfail(81);
 ```
 Si la condition n'est pas remplie, il va renvoyer une erreur 404.
+
+# Le OrderBy
+```php
+	$posts = Post::orderby('title');
+```
 
 # Le WHERE
 ```php
