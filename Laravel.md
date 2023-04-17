@@ -2,7 +2,7 @@
 title: Laravel
 description: 
 published: true
-date: 2023-04-17T12:39:59.395Z
+date: 2023-04-17T13:32:06.024Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T09:32:49.384Z
@@ -18,4 +18,5 @@ dateCreated: 2023-04-17T09:32:49.384Z
 - [Introduction à Blade](/Laravel/Blade)
 - [Configurer une Base de Donnée](/Laravel/Database)
 - [Les Migrations](/Laravel/Les-Migrations)
+- [Introduction au factories sur Laravel](/Laravel/Les-Factories)
 {.links-list}
