@@ -2,7 +2,7 @@
 title: Introduction à Blade
 description: 
 published: true
-date: 2023-04-17T11:08:47.962Z
+date: 2023-04-17T11:08:53.923Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T11:07:18.166Z
@@ -43,7 +43,7 @@ dateCreated: 2023-04-17T11:07:18.166Z
 	@endforeach
 ```
 
-## Options disponible
+## Options disponibles
 
 ```php
 	@continue($user->type == 1)
