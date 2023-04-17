@@ -2,7 +2,7 @@
 title: Créer un nouveau projet Laravel
 description: 
 published: true
-date: 2023-04-17T09:41:07.233Z
+date: 2023-04-17T11:26:34.693Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T09:41:07.233Z
