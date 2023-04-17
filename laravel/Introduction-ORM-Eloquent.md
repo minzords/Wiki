@@ -2,7 +2,7 @@
 title: Introduction à l'ORM Eloquent
 description: 
 published: true
-date: 2023-04-17T14:10:45.538Z
+date: 2023-04-17T14:12:13.725Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T14:07:15.455Z
@@ -23,4 +23,11 @@ Laravel fournie une fonction pour debug, elle va afficher toutes les information
 ```php
 	$posts = Post::all();
   dd($posts);
+```
+
+## Exemple d'un affichage dans la vue
+```php
+	@foreach ($posts as $post)
+		<h2>{{ $post->title }}</h2>
+	@endforeach
 ```
