@@ -2,7 +2,7 @@
 title: Les migrations sur Laravel
 description: 
 published: true
-date: 2023-04-17T12:45:19.027Z
+date: 2023-04-17T12:49:33.428Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T12:37:22.397Z
@@ -27,3 +27,17 @@ Le chemin du model est : **app/Models/Post.php** et la migration : **database/
 	}
 ```
 Il va donc y avoir une colonne ID, et timestamps (CreateAT, UpdateAT).
+
+# Ajout de colonnes
+```php
+public function up(): void
+{
+  	Schema::create('posts', function (Blueprint $table) {
+    		$table->id();
+        $table->string('title');
+        $table->text('content');
+        $table->timestamps();
+		});
+}
+```
+Il va donc y avoir une champ title de type string, et un champ content de type texte.
