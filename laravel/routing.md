@@ -2,7 +2,7 @@
 title: Le Routing sur Laravel
 description: 
 published: true
-date: 2023-04-17T09:20:00.244Z
+date: 2023-04-17T11:25:18.458Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T09:20:00.244Z
