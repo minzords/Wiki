@@ -2,7 +2,7 @@
 title: Introduction à Blade
 description: 
 published: true
-date: 2023-04-17T11:07:28.159Z
+date: 2023-04-17T11:08:47.962Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T11:07:18.166Z
@@ -39,12 +39,18 @@ dateCreated: 2023-04-17T11:07:18.166Z
 
 ```php
 	@foreach ($users as $user)
-    @continue($user->type == 1)
- 
     <li>{{ $user->name }}</li>
- 
-    @break($user->number == 5)
 	@endforeach
+```
+
+## Options disponible
+
+```php
+	@continue($user->type == 1)
+```
+	
+```php
+	@break($user->number == 5)
 ```
 
 # Le For
