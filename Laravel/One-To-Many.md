@@ -2,7 +2,7 @@
 title: La relation One to Many
 description: 
 published: true
-date: 2023-04-17T18:31:37.562Z
+date: 2023-04-17T19:11:06.374Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T18:31:37.562Z
@@ -38,3 +38,30 @@ dateCreated: 2023-04-17T18:31:37.562Z
         });
     }
 ```
+
+# Mettre un accès au commentaire depuis Post
+Dans **app/Models/Post.php**
+
+```php
+	class Post extends Model
+	{
+  		use HasFactory;
+
+			public function comments()
+			{
+					return $this->hasMany(Comment::class);
+			}
+	}
+```
+
+## Depuis Comment
+```php
+	class Comment extends Model
+  {
+			use HasFactory;
+
+			public function post()
+			{
+					return $this->belongsTo(Post::class);
+			}
+	}
