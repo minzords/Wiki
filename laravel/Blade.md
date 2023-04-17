@@ -2,7 +2,7 @@
 title: Introduction à Blade
 description: 
 published: true
-date: 2023-04-17T11:19:35.398Z
+date: 2023-04-17T11:23:49.569Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T11:07:18.166Z
@@ -14,6 +14,8 @@ Il est souvent très pratique de mettre dans un fichier séparer certains élém
 Dans cet exemple, je vais créer un sous dossier dans views qui se nomme layouts qui va contenir les pages de base à inclure.
 
 ## Création de la page de base qui sera inclus
+
+Le fichier se nomme **app.blade.php** (resources/views/layouts/app.blade.php)
 
 ```php
 	<!DOCTYPE html>
@@ -30,10 +32,24 @@ Dans cet exemple, je vais créer un sous dossier dans views qui se nomme layouts
 </html>
 ```
 
-**@yield ('content')** va definir l'endroit ou l'ont va injecté le contenu de la section 'content'
+**@yield ('content')** va definir l'endroit où l'on va injecter le contenu de la section 'content'
 
 ## Création de la page qui va inclure la base
+Voici le contenu de la page **accueil** (resources/views/accueil.blade.php).
 
+```php
+  @extends ('layouts.app')
+
+  @section ('content')
+  <h1>{{ $title }}</h1>
+  @endsection
+```
+
+**@extends ('layouts.app')** : on inclut la vue layouts/app.blade.php.
+
+**@section ('content')** : On définit la section content qui est le contenu qui change de la vue app.blade.php. 
+
+**@endsection** : fin de la section content.
 
 # Les conditions de base
 ## Le IF
