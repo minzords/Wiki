@@ -2,7 +2,7 @@
 title: Introduction au factories sur Laravel
 description: 
 published: true
-date: 2023-04-17T13:18:09.258Z
+date: 2023-04-17T13:18:56.794Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T13:18:09.258Z
@@ -16,4 +16,6 @@ Les facteurs vont servir à peupler la base de donnée, nous allons la peupler a
 	php artisan make:factory PostFactory --model=Post
 ```
 Ici, on génère un factory qui se nomme PostFactory et qui utilise le modèle Post qui existe déjà.
+
+Le factory est maintenant créé ici : **database/factories/UserFactory.php**
 
