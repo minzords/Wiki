@@ -2,7 +2,7 @@
 title: Le Routing sur Laravel
 description: 
 published: true
-date: 2023-04-17T11:38:59.913Z
+date: 2023-04-17T17:46:26.033Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T09:20:00.244Z
@@ -31,7 +31,7 @@ Voici comment créer une **route "/"** qui va utiliser la **fonction index** du 
     return view('accueil');
 });
 ```
-Ce route va renvoyer la vue accueil sans utiliser un controller. 
+Cette route va renvoyer la vue accueil sans utiliser un controller. 
 
 > Cette pratique ne respecte pas la méthode MVC.
 {.is-warning}
