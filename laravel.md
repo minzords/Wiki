@@ -2,7 +2,7 @@
 title: Laravel
 description: 
 published: true
-date: 2023-04-17T09:44:29.638Z
+date: 2023-04-17T10:00:05.676Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T09:32:49.384Z
@@ -13,4 +13,5 @@ dateCreated: 2023-04-17T09:32:49.384Z
 
 # Les Bases
 - [Le routing](/laravel/routing)
+- [Introduction au Vue](/laravel/Vue)
 {.links-list}
