@@ -2,7 +2,7 @@
 title: Les Vues dans Laravel
 description: 
 published: true
-date: 2023-04-17T09:59:09.281Z
+date: 2023-04-17T11:25:43.643Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T09:49:08.671Z
