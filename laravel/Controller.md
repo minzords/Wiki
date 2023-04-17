@@ -2,7 +2,7 @@
 title: Introduction au Controller dans Laravel
 description: 
 published: true
-date: 2023-04-17T10:57:19.255Z
+date: 2023-04-17T11:26:10.853Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T10:51:32.312Z
