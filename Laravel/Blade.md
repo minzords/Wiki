@@ -2,7 +2,7 @@
 title: Introduction à Blade
 description: 
 published: true
-date: 2023-04-17T11:31:55.041Z
+date: 2023-04-17T11:32:10.575Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T11:07:18.166Z
@@ -51,7 +51,7 @@ Voici le contenu de la page **accueil** (resources/views/accueil.blade.php).
 
 **@endsection** : fin de la section content.
 
-## Inclure une vue la vue de base. 
+## Inclure une vue dans la vue de base. 
 
 ```php
 	<body>
