@@ -2,7 +2,7 @@
 title: Les migrations sur Laravel
 description: 
 published: true
-date: 2023-04-17T12:49:33.428Z
+date: 2023-04-17T12:49:47.319Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T12:37:22.397Z
@@ -28,7 +28,7 @@ Le chemin du model est : **app/Models/Post.php** et la migration : **database/
 ```
 Il va donc y avoir une colonne ID, et timestamps (CreateAT, UpdateAT).
 
-# Ajout de colonnes
+# Ajouts de colonnes
 ```php
 public function up(): void
 {
