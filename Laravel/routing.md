@@ -2,7 +2,7 @@
 title: Le Routing sur Laravel
 description: 
 published: true
-date: 2023-04-17T11:25:18.458Z
+date: 2023-04-17T11:38:59.913Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T09:20:00.244Z
@@ -16,6 +16,12 @@ Voici comment créer une **route "/"** qui va utiliser la **fonction index** du 
 
 ```php
 	Route::get('/', [HomeController::class, 'index']);
+```
+
+## Definir un nom à la route
+
+```php
+	return view('accueil', ['title' => $title])->name("accueil");
 ```
 
 # Mises en place d'une route qui renvoie une vue (non recommandé)
