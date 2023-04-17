@@ -2,7 +2,7 @@
 title: Introduction à Blade
 description: 
 published: true
-date: 2023-04-17T11:23:49.569Z
+date: 2023-04-17T11:26:24.841Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T11:07:18.166Z
