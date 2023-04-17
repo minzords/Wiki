@@ -2,7 +2,7 @@
 title: Les migrations sur Laravel
 description: 
 published: true
-date: 2023-04-17T12:49:47.319Z
+date: 2023-04-17T12:51:18.966Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T12:37:22.397Z
@@ -40,4 +40,10 @@ public function up(): void
 		});
 }
 ```
-Il va donc y avoir une champ title de type string, et un champ content de type texte.
+Il va ainsi y avoir un champ title de type string, et un champ content de type texte.
+
+# Lancer la migration
+```bash
+	php artisan migrate
+```
+Les tables sont maintenant créées.
