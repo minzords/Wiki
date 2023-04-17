@@ -2,11 +2,14 @@
 title: Introduction au Controller dans Laravel
 description: 
 published: true
-date: 2023-04-17T10:55:15.361Z
+date: 2023-04-17T10:57:19.255Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T10:51:32.312Z
 ---
+
+# Introduction
+Le controller est la partie qui va traiter les données et les renvoyés à la vue, **c'est le seul endroit où on fait du traitement de donnée**.
 
 # Créer un controller
 ```bash
