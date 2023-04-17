@@ -2,7 +2,7 @@
 title: Traitement d'un formulaire avec Laravel
 description: 
 published: true
-date: 2023-04-17T15:56:39.531Z
+date: 2023-04-17T15:56:50.129Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T15:51:34.801Z
@@ -81,7 +81,7 @@ class Post extends Model
  {
  		// Création du post et stockage en base de données
     $post = new Post();
-   	$post->title = $request->input('title');
+    $post->title = $request->input('title');
     $post->content = $request->input('content');
     $post->save();
 
