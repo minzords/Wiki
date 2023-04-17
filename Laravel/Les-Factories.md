@@ -2,7 +2,7 @@
 title: Introduction au factories sur Laravel
 description: 
 published: true
-date: 2023-04-17T13:30:51.885Z
+date: 2023-04-17T13:31:35.582Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T13:18:09.258Z
@@ -49,6 +49,7 @@ La documentation sur les types générateurs intégré est disponible [ICI](http
 ```php
 	Post::Factory()->count(10)->create();
 ```
+Il va donc gérer 10 lignes dans la BDD.
 
 ### En cas d'erreur sur la classe Post
 ```bash
