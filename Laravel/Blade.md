@@ -2,7 +2,7 @@
 title: Introduction à Blade
 description: 
 published: true
-date: 2023-04-17T11:26:24.841Z
+date: 2023-04-17T11:31:55.041Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T11:07:18.166Z
@@ -50,6 +50,17 @@ Voici le contenu de la page **accueil** (resources/views/accueil.blade.php).
 **@section ('content')** : On définit la section content qui est le contenu qui change de la vue app.blade.php. 
 
 **@endsection** : fin de la section content.
+
+## Inclure une vue la vue de base. 
+
+```php
+	<body>
+  	@include ('partials.navbar')
+    @yield ('content')
+</body>
+```
+
+**@include ('partials.navbar')** : va inclure la vue **layouts/partials/navbar.blade.php**
 
 # Les conditions de base
 ## Le IF
