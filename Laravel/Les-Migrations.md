@@ -2,7 +2,7 @@
 title: Les migrations sur Laravel
 description: 
 published: true
-date: 2023-04-17T12:51:18.966Z
+date: 2023-04-17T12:52:08.482Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T12:37:22.397Z
