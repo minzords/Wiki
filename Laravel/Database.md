@@ -2,7 +2,7 @@
 title: Configurer la base de donnée sur Laravel
 description: 
 published: true
-date: 2023-04-17T12:29:04.920Z
+date: 2023-04-17T13:33:10.568Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T12:29:04.920Z
@@ -25,8 +25,8 @@ La configuration se trouve dans le fichier .env
 
 ```php
 	DB_CONNECTION=sqlite
-	DB_DATABASE=/absolute/path/to/database.sqlite
-  DB_FOREIGN_KEYS=true
+DB_DATABASE=/absolute/path/to/database.sqlite
+DB_FOREIGN_KEYS=true
 ```
 
 ## PostgreSQL
