@@ -2,7 +2,7 @@
 title: Laravel
 description: 
 published: true
-date: 2023-04-17T18:24:09.327Z
+date: 2023-04-18T08:59:22.528Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T09:32:49.384Z
