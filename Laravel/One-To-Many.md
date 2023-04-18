@@ -2,7 +2,7 @@
 title: La relation One to Many
 description: 
 published: true
-date: 2023-04-18T08:58:33.965Z
+date: 2023-04-18T18:20:24.555Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T18:31:37.562Z
@@ -50,19 +50,6 @@ Dans **app/Models/Post.php**
 			public function comments()
 			{
 					return $this->hasMany(Comment::class);
-			}
-	}
-```
-
-## Depuis Comment
-```php
-	class Comment extends Model
-  {
-			use HasFactory;
-
-			public function post()
-			{
-					return $this->belongsTo(Post::class);
 			}
 	}
 ```
