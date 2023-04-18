@@ -2,7 +2,7 @@
 title: Laravel
 description: 
 published: true
-date: 2023-04-18T08:59:22.528Z
+date: 2023-04-18T18:46:43.358Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T09:32:49.384Z
@@ -24,5 +24,6 @@ dateCreated: 2023-04-17T09:32:49.384Z
 {.links-list}
 
 # Les relations
+- [One To One](/Laravel/One-To-One)
 - [One To Many](/Laravel/One-To-Many)
 {.links-list}
