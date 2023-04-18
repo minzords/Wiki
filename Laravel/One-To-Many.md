@@ -2,7 +2,7 @@
 title: La relation One to Many
 description: 
 published: true
-date: 2023-04-17T19:11:06.374Z
+date: 2023-04-18T08:58:33.965Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T18:31:37.562Z
@@ -65,3 +65,11 @@ Dans **app/Models/Post.php**
 					return $this->belongsTo(Post::class);
 			}
 	}
+```
+
+# Affichage dans la vue
+```php
+	@foreach ($posts->comments as $comment)
+			<p>{{ $comment->content }}</p>
+  @endforeach
+```
