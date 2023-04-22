@@ -2,7 +2,7 @@
 title: La relation Many to Many
 description: 
 published: true
-date: 2023-04-22T13:45:01.955Z
+date: 2023-04-22T13:46:41.690Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-22T13:44:12.716Z
@@ -56,8 +56,8 @@ dateCreated: 2023-04-22T13:44:12.716Z
 
 			public function categories()
 			{
-					return $this->belongsToMany(Categorie::class);
-			}
+      		return $this->belongsToMany(Categorie::class);
+      }
 	}
 ```
 
