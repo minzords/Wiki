@@ -2,7 +2,7 @@
 title: Cisco
 description: 
 published: true
-date: 2022-05-13T07:21:08.618Z
+date: 2023-05-04T13:04:37.350Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-06T12:21:37.617Z
@@ -20,13 +20,13 @@ dateCreated: 2021-12-06T12:21:37.617Z
 - [LACP - Agrégation de lien](/Cisco/LACP)
 {.links-list}
 
-# VLAN:
+# VLAN
 - [VLAN](/Cisco/VLAN)
 - [Routage inter-VLAN](/Cisco/Routage-InterVLAN)
 - [Configuration du VTP](/Cisco/VTP)
 {.links-list}
 
-# RIP:
+# RIP
 - [RIP](/Cisco/RIP)
 {.links-list}
 
@@ -34,7 +34,7 @@ dateCreated: 2021-12-06T12:21:37.617Z
 - [EIGRP](/Cisco/EIGRP)
 {.links-list}
 
-# BGP:
+# BGP
 - [BGP](/Cisco/BGP)
 {.links-list}
 
