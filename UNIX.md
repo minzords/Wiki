@@ -2,7 +2,7 @@
 title: UNIX (LINUX & BSD)
 description: 
 published: true
-date: 2023-04-15T18:36:23.874Z
+date: 2023-05-04T13:01:38.771Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:47:12.193Z
@@ -14,8 +14,6 @@ dateCreated: 2021-10-02T11:47:12.193Z
 - [Mises à jours avec Ansible](/UNIX/mises-a-jours-avec-ansible)
 - [Installation de Portainer.io](/UNIX/installation-portainerio)
 - [Changement du Subnet par défaut de Docker](/UNIX/Changer-le-Subnet-Docker)
-- [Création de l'Autorité de certification + HTTPS](/UNIX/HTTPS)
-{.links-list}
 
 # DNS
 - [Mises en place d'un DNS avec Bind](/UNIX/DNS-BIND)
@@ -26,6 +24,10 @@ dateCreated: 2021-10-02T11:47:12.193Z
 - [Créer un cluster HA avec corosync](/UNIX/Cluster-HA-Corosync)
 - [Créer une IPFailover sur Corosync](/UNIX/IPFailover-Corosync)
 - [Redondance sur MySQL](/UNIX/HA-MySQL)
+{.links-list}
+
+# HTTPS
+- [Création de l'Autorité de certification + HTTPS](/UNIX/HTTPS)
 {.links-list}
 
 # Routage
