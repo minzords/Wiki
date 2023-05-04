@@ -2,7 +2,7 @@
 title: UNIX (LINUX & BSD)
 description: 
 published: true
-date: 2023-05-04T13:11:48.780Z
+date: 2023-05-04T14:19:45.142Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:47:12.193Z
@@ -43,6 +43,7 @@ dateCreated: 2021-10-02T11:47:12.193Z
 
 # VOIP
 - [Cluster Asterisk](/UNIX/Cluster-Asterisk)
+- [Mises en place d'un routage InterContexte](/UNIX/Asterisk-Route-InterContexte)
 {.links-list}
 
 # Divers essais
