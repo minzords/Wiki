@@ -2,14 +2,14 @@
 title: Mises en place d'un routage InterContexte
 description: 
 published: true
-date: 2023-05-04T14:18:03.768Z
+date: 2023-05-04T14:18:37.192Z
 tags: 
 editor: markdown
 dateCreated: 2023-05-04T14:18:03.768Z
 ---
 
 # Configuration des utilisateurs
-```
+```bash
 [local-user](!)
     type = friend
     host = dynamic
