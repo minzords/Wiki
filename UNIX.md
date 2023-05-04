@@ -2,7 +2,7 @@
 title: UNIX (LINUX & BSD)
 description: 
 published: true
-date: 2023-05-04T13:01:38.771Z
+date: 2023-05-04T13:01:57.788Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:47:12.193Z
@@ -14,6 +14,7 @@ dateCreated: 2021-10-02T11:47:12.193Z
 - [Mises à jours avec Ansible](/UNIX/mises-a-jours-avec-ansible)
 - [Installation de Portainer.io](/UNIX/installation-portainerio)
 - [Changement du Subnet par défaut de Docker](/UNIX/Changer-le-Subnet-Docker)
+{.links-list}
 
 # DNS
 - [Mises en place d'un DNS avec Bind](/UNIX/DNS-BIND)
