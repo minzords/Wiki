@@ -2,7 +2,7 @@
 title: Redondance d'un serveur Asterisk
 description: 
 published: true
-date: 2023-05-04T12:55:12.293Z
+date: 2023-05-04T13:00:44.055Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-15T18:33:33.815Z
@@ -18,7 +18,7 @@ La clé se trouve ici : /etc/corosync/authkey, il faut qu'elle soit sur tous le
 
 # configuration de Corosync
 
-```/etc/corosync/corosync.conf```
+```vi /etc/corosync/corosync.conf```
 
 ```
 totem {
