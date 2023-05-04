@@ -2,7 +2,7 @@
 title: Redondance d'un serveur Asterisk
 description: 
 published: true
-date: 2023-04-15T18:36:05.954Z
+date: 2023-05-04T12:55:12.293Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-15T18:33:33.815Z
@@ -71,6 +71,7 @@ service {
 
 # Désactivation du Quorum
 ```crm configure property stonith-enabled=false```
+```crm configure property no-quorum-policy=ignore```
 
 # Mises en place de l'IPFailover
 
