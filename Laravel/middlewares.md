@@ -2,7 +2,7 @@
 title: Les Middleware
 description: 
 published: true
-date: 2023-06-05T10:52:27.584Z
+date: 2023-06-05T10:52:46.633Z
 tags: 
 editor: markdown
 dateCreated: 2023-06-05T09:36:32.956Z
@@ -54,9 +54,7 @@ Dans ***app/Http/Middleware/nom.php***
     public function handle(Request $request, Closure $next): Response
     {
     		/*
-				|--------------------------------------------------------------------------				
         | Logique
-				|--------------------------------------------------------------------------
         */
         return $next($request);
     }
