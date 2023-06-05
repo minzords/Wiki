@@ -2,7 +2,7 @@
 title: Laravel
 description: 
 published: true
-date: 2023-04-22T13:45:34.866Z
+date: 2023-06-05T09:37:09.618Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T09:32:49.384Z
@@ -21,6 +21,7 @@ dateCreated: 2023-04-17T09:32:49.384Z
 - [Introduction au factories sur Laravel](/Laravel/Les-Factories)
 - [Introduction à l'ORM Eloquent](/Laravel/Introduction-ORM-Eloquent)
 - [Traitement d'un formulaire avec Laravel](/Laravel/Traitement-Formulaire)
+- [Les Middlewares](/Laravel/middlewares)
 {.links-list}
 
 # Les relations
