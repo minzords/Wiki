@@ -2,19 +2,23 @@
 title: Changer l'Init de Debian pour OpenRC
 description: 
 published: true
-date: 2022-11-04T13:35:02.340Z
+date: 2023-06-11T13:05:25.066Z
 tags: openrc, debian
 editor: markdown
 dateCreated: 2022-07-17T16:33:52.967Z
 ---
 
 # Installation d'OpenRC
-> apt install openrc sysvinit-core
+```bash
+apt install openrc sysvinit-core
+```
 
 Redémarrer, vous devriez démarrer sur OpenRC.
 
 # Suppression complète de Systemd
-> apt remove systemd*
+```bash
+apt remove systemd*
+```
 
 # Debian avec OpenRC en action
 ![debian-openrc.png](/linux/debian-openrc.png)
