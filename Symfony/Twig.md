@@ -2,7 +2,7 @@
 title: Utilisation de Twig
 description: 
 published: true
-date: 2023-07-20T15:02:31.386Z
+date: 2023-07-20T15:02:52.158Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-20T15:02:31.386Z
@@ -15,7 +15,8 @@ dateCreated: 2023-07-20T15:02:31.386Z
       <p>{{ item }}</p>
   {% endfor %}
 ```
-## Les Conditions
+# Les Conditions
+## IF
 ```twig
 	{% if variable == truc) %}
     <p>La valeur de variable est truc.</p>
