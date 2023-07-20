@@ -2,7 +2,7 @@
 title: Laravel
 description: 
 published: true
-date: 2023-07-20T11:47:55.704Z
+date: 2023-07-20T12:04:29.612Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-17T09:32:49.384Z
@@ -30,5 +30,6 @@ dateCreated: 2023-04-17T09:32:49.384Z
 - [Many To Many](/Laravel/Many-To-Many)
 {.links-list}
 
-# Fonctionnalité
+# Fonctionnalités
 - [Upload de fichier](/Laravel/Upload)
+{.links-list}
