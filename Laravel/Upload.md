@@ -2,14 +2,14 @@
 title: Upload de Fichier sur Laravel
 description: 
 published: true
-date: 2023-07-20T12:01:33.695Z
+date: 2023-07-20T12:02:48.028Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-20T12:01:33.695Z
 ---
 
 # Introduction
-Dans cette exemple nous allons crée un formulaire qui va créer un nouveau produit qui contient un nom, une categorie et on va lui definir une image. Cette image sera stockée dans notre projet laravel **(storage/app/public)**. 
+Dans cet exemple, nous allons créer un formulaire qui va créer un nouveau produit qui contient un nom, une categorie et on va lui definir une image. Cette image sera stockée dans notre projet laravel **(storage/app/public)**. 
 
 
 # La méthode qui va router vers le formulaire
@@ -21,7 +21,7 @@ Dans cette exemple nous allons crée un formulaire qui va créer un nouveau prod
   }
 ```
 
-Cette méthode va simplement récuperer toutes les categories disponible et renvoyer la vue admin.produit.create **(resources/views/admin/produit/create.blade.php)** avec la variable Cette méthode va simplement récuperer toutes les categories disponible et renvoyer la vu admin.produit.create **(resources/views/admin/produit/create.blade.php)** avec la variable categories qui contient les categories. qui contient les categories.
+Cette méthode va simplement récupérer toutes les catégories disponibles et renvoyer la vue admin.produit.create **(resources/views/admin/produit/create.blade.php)** avec la variable c qui contient les catégories.
 
 # Le formulaire HTML (Blade)
 ```html
