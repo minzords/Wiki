@@ -2,7 +2,7 @@
 title: Installer MAUI sur Linux
 description: 
 published: true
-date: 2023-07-22T14:03:44.759Z
+date: 2023-07-23T19:01:55.630Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-22T14:01:58.685Z
@@ -32,6 +32,10 @@ maui-android                              7.0.92/7.0.100            SDK 7.0.100
 Utilisez « recherche de la charge de travail dotnet » pour rechercher d’autres charges de travail à installer.
 
 ```
+
+# Installation d'OPENJDK 11 de Microsoft (Java)
+- [Documentation ici](https://learn.microsoft.com/fr-fr/java/openjdk/download#openjdk-11)
+{.links-list}
 
 # Installation du SDK Android
 TODO
