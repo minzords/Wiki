@@ -2,7 +2,7 @@
 title: Installer MAUI sur Linux
 description: 
 published: true
-date: 2023-07-23T19:01:55.630Z
+date: 2023-07-23T19:02:55.940Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-22T14:01:58.685Z
@@ -39,3 +39,7 @@ Utilisez « recherche de la charge de travail dotnet » pour rechercher d’autr
 
 # Installation du SDK Android
 TODO
+
+# Configuration VSCODE
+- [Documentation ici](/CSharp/Configuration-VSCODE)
+{.links-list}
