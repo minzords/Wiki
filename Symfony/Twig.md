@@ -2,7 +2,7 @@
 title: Utilisation de Twig
 description: 
 published: true
-date: 2023-09-13T09:03:36.818Z
+date: 2023-09-13T09:04:50.129Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-20T15:02:31.386Z
@@ -20,6 +20,13 @@ Dans cette exemple je vais afficher la variable **ave**.
   {% for item in items %}
       <p>{{ item }}</p>
   {% endfor %}
+```
+
+## FOR
+```twig
+	{% for user in users %}
+        <li>{{ user.username }}</li>
+    {% endfor %}
 ```
 # Les Conditions
 ## IF
