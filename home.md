@@ -2,7 +2,7 @@
 title: Bienvenue sur le Wiki
 description: 
 published: true
-date: 2023-09-13T18:35:54.034Z
+date: 2023-09-13T18:36:18.864Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-29T16:38:43.742Z
@@ -16,7 +16,7 @@ dateCreated: 2021-09-29T16:38:43.742Z
 - [Cisco](/Cisco)
 {.links-list}
 
-# Developement
+# Développement
 - [C#](/CSharp)
 - [Laravel (PHP)](/Laravel)
 {.links-list}
