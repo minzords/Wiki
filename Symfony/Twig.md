@@ -2,13 +2,14 @@
 title: Utilisation de Twig
 description: 
 published: true
-date: 2023-09-13T09:03:04.322Z
+date: 2023-09-13T09:03:36.818Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-20T15:02:31.386Z
 ---
 
 # Afficher une variable
+Dans cette exemple je vais afficher la variable **ave**.
 ```twig
 	{{ ave }}
 ```
