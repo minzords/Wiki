@@ -2,7 +2,7 @@
 title: Utilisation de Twig
 description: 
 published: true
-date: 2023-09-13T09:05:10.345Z
+date: 2023-09-13T09:08:19.567Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-20T15:02:31.386Z
@@ -28,6 +28,7 @@ Dans cette exemple je vais afficher la variable **ave**.
         <li>{{ user.username }}</li>
   {% endfor %}
 ```
+
 # Les Conditions
 ## IF
 ```twig
