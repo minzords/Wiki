@@ -2,7 +2,7 @@
 title: Installation de Kubernetes avec MiniKube
 description: 
 published: true
-date: 2023-09-13T19:26:52.456Z
+date: 2023-09-13T19:39:07.847Z
 tags: 
 editor: markdown
 dateCreated: 2023-09-13T19:13:39.758Z
@@ -31,4 +31,9 @@ dateCreated: 2023-09-13T19:13:39.758Z
 ```bash
 	minikube start
 	echo 'alias kubectl="minikube kubectl --"' >> ~/.bashrc && source .bashrc
+```
+
+# Activer le Panneau de configuration web
+```
+	minikube dashboard
 ```
