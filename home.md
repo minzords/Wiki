@@ -2,7 +2,7 @@
 title: Bienvenue sur le Wiki
 description: 
 published: true
-date: 2023-09-13T18:36:18.864Z
+date: 2023-09-13T18:36:56.100Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-29T16:38:43.742Z
