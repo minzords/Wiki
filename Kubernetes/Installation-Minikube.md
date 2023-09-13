@@ -2,7 +2,7 @@
 title: Installation de Kubernetes avec MiniKube
 description: 
 published: true
-date: 2023-09-13T19:18:15.810Z
+date: 2023-09-13T19:25:54.856Z
 tags: 
 editor: markdown
 dateCreated: 2023-09-13T19:13:39.758Z
@@ -27,4 +27,8 @@ dateCreated: 2023-09-13T19:13:39.758Z
 ```bash
 	wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 	install minikube-linux-amd64 /usr/local/bin/minikube
+```
+```bash
+	minikube start
+	echo 'alias kubectl="minikube kubectl --"' >> ~/.bashrc
 ```
