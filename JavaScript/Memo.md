@@ -2,13 +2,13 @@
 title: Mémo JS
 description: 
 published: true
-date: 2023-09-14T16:04:46.659Z
+date: 2023-09-14T16:08:15.666Z
 tags: 
 editor: markdown
 dateCreated: 2023-09-14T16:04:46.659Z
 ---
 
-# Les variable
+# Les variables
 ```js
 	// Déclaration de la variable a
 	let a = 1
