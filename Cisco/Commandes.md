@@ -2,7 +2,7 @@
 title: Commandes Cisco
 description: 
 published: true
-date: 2022-01-21T11:31:19.102Z
+date: 2023-10-06T08:52:32.364Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-15T16:58:27.804Z
@@ -85,4 +85,7 @@ Switch(config)#enable secret Mdpsecu
 # Sauvegardez la configuration
 > Switch#copy running-config startup-config 
 Switch#reload
+
+# Sauvegardez sur un serveur TFTP
+> copy tftp: running-config
 
