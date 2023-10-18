@@ -2,7 +2,7 @@
 title: Note - Commande Kubernetes
 description: 
 published: true
-date: 2023-10-18T11:50:17.819Z
+date: 2023-10-18T12:07:08.107Z
 tags: 
 editor: markdown
 dateCreated: 2023-10-18T11:27:43.910Z
@@ -27,9 +27,17 @@ Available Commands:
 | loadbalancer | Create a LoadBalancer service  |
 | nodeport     | Create a NodePort service      |
 
-
-
 # Afficher les métadonnées d'un déploiement
 ```bash
 	kubectl describe deploy serveur-nginx
+```
+
+# Afficher les services
+```bash
+	kubectl get services
+```
+
+# Mettre en place de scaling (replication + Round-robin)
+```bash
+	kubectl scale deploy serveur-nginx --replicas=2
 ```
