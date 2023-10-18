@@ -2,7 +2,7 @@
 title: Note - Commande Kubernetes
 description: 
 published: true
-date: 2023-10-18T12:16:57.024Z
+date: 2023-10-18T12:18:49.224Z
 tags: 
 editor: markdown
 dateCreated: 2023-10-18T11:27:43.910Z
@@ -56,4 +56,9 @@ Il y aura donc 2 pods au départ et plus les pods seront utilisés, plus, il va 
 # Appliquer un Déploiement
 ```bash
 	kubectl apply -f serveur-nginx.yaml
+```
+
+# Afficher les versions des API
+```bash
+	kubectl api-versions
 ```
