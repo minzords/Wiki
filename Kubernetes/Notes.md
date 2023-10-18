@@ -2,7 +2,7 @@
 title: Note - Commande Kubernetes
 description: 
 published: true
-date: 2023-10-18T11:40:53.386Z
+date: 2023-10-18T11:50:17.819Z
 tags: 
 editor: markdown
 dateCreated: 2023-10-18T11:27:43.910Z
@@ -13,6 +13,21 @@ dateCreated: 2023-10-18T11:27:43.910Z
 	kubectl create deployment serveur-nginx --image nginx
 ```
 Dans cet exemple, on crée le déploiement serveur-nginx qui utilise l'image docker nginx.
+
+# Créer une redirection de port
+```bash
+	kubectl create service serveur-nginx --image nginx 
+```
+
+Available Commands:
+|   Commandes  |            Description         |
+|--------------|--------------------------------|
+| clusterip    | Create a ClusterIP service     |
+| externalname | Create an ExternalName service |
+| loadbalancer | Create a LoadBalancer service  |
+| nodeport     | Create a NodePort service      |
+
+
 
 # Afficher les métadonnées d'un déploiement
 ```bash
