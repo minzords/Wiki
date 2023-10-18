@@ -2,7 +2,7 @@
 title: Note - Commande Kubernetes
 description: 
 published: true
-date: 2023-10-18T12:07:08.107Z
+date: 2023-10-18T12:08:50.260Z
 tags: 
 editor: markdown
 dateCreated: 2023-10-18T11:27:43.910Z
@@ -40,4 +40,9 @@ Available Commands:
 # Mettre en place de scaling (replication + Round-robin)
 ```bash
 	kubectl scale deploy serveur-nginx --replicas=2
+```
+
+# Scale automatique
+```bash
+	kubectl autoscale deploy serveur-nginx --min=2 --max=20
 ```
