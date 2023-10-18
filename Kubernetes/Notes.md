@@ -2,7 +2,7 @@
 title: Note - Commande Kubernetes
 description: 
 published: true
-date: 2023-10-18T12:18:49.224Z
+date: 2023-10-18T12:19:52.529Z
 tags: 
 editor: markdown
 dateCreated: 2023-10-18T11:27:43.910Z
@@ -61,4 +61,9 @@ Il y aura donc 2 pods au départ et plus les pods seront utilisés, plus, il va 
 # Afficher les versions des API
 ```bash
 	kubectl api-versions
+```
+
+# Afficher le Manuel/Explication d'une commande
+```bash
+	kubectl explain services
 ```
