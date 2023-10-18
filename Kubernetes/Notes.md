@@ -2,7 +2,7 @@
 title: Note - Commande Kubernetes
 description: 
 published: true
-date: 2023-10-18T12:08:50.260Z
+date: 2023-10-18T12:10:24.271Z
 tags: 
 editor: markdown
 dateCreated: 2023-10-18T11:27:43.910Z
@@ -46,3 +46,4 @@ Available Commands:
 ```bash
 	kubectl autoscale deploy serveur-nginx --min=2 --max=20
 ```
+Il y aura donc 2 pods au départ et plus les pods seront utilisés, plus, il va créer de pods.
