@@ -2,7 +2,7 @@
 title: Installer un cluster Kubernetes
 description: 
 published: true
-date: 2023-10-19T10:01:41.586Z
+date: 2023-10-19T10:03:00.697Z
 tags: 
 editor: markdown
 dateCreated: 2023-10-19T10:01:41.586Z
@@ -67,14 +67,14 @@ sudo sysctl --system
   kubeadm init \
     --pod-network-cidr=192.168.89.0/16
 ```
-192.168.89.0 sera le reseau local des conteneurs.
+192.168.89.0 sera le réseau local des conteneurs.
 
 # Gestion du reseau avec flannel
 ```bash
   wget https://raw.githubusercontent.com/flannel-io/flannel/master/Documentation/kube-flannel.yml
   vi kube-flannel.yml
 ```
-Et modifier le champ Network pour indiquer le reseau local dans notre exemple: 192.168.89.0/16
+Et modifier le champ Network pour indiquer le réseau local dans notre exemple: 192.168.89.0/16
 
 ```bash
   kubectl apply -f kube-flannel.yml
@@ -84,8 +84,7 @@ Et modifier le champ Network pour indiquer le reseau local dans notre exemple: 1
 ```bash
   kubeadm join 10.0.2.100:6443 --token hpr49r.v40bgx8z06gk4itf --discovery-token-ca-cert-hash sha256:f95f3c004c9757265e395b68654c66ce9cbba22eb2129ebde2f2b0c29107f41a
 ```
-Les parametres pour rejoindre le Control Plane a ete donne au moment de l'initialisation du Control Plane.
-
+Les paramètres pour rejoindre le Control Plane a été donné au moment de l'initialisation du Control Plane.
 
 
 Sources: [computingforgeeks](https://computingforgeeks.com/install-kubernetes-cluster-on-debian-12-bookworm)
