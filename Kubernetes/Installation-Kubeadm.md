@@ -2,7 +2,7 @@
 title: Installer un cluster Kubernetes
 description: 
 published: true
-date: 2023-10-19T10:03:00.697Z
+date: 2023-10-19T10:06:42.807Z
 tags: 
 editor: markdown
 dateCreated: 2023-10-19T10:01:41.586Z
@@ -79,6 +79,14 @@ Et modifier le champ Network pour indiquer le réseau local dans notre exemple: 
 ```bash
   kubectl apply -f kube-flannel.yml
 ```
+
+# Mettre en place l'autocompletion
+```
+	apt install bash-completion
+	echo "source <(kubectl completion bash)" >> ~/.bashrc
+	source ~/.bashrc
+```
+
 
 # Integrer un noeud au cluster
 ```bash
