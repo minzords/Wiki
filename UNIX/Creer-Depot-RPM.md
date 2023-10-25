@@ -2,7 +2,7 @@
 title: Créer un dépôt RPM
 description: 
 published: true
-date: 2023-10-25T14:15:30.168Z
+date: 2023-10-25T14:17:19.344Z
 tags: 
 editor: markdown
 dateCreated: 2023-10-25T14:15:30.168Z
@@ -30,12 +30,12 @@ Le dépôt est créé, il vous reste juste à faire un serveur web, ou sont root
 
 ## Exemple vers un serveur HTTPS avec une signature GPG
 ```
-[ITSM-NG]
-name=ITSM-ng
-baseurl=http://rpm.itsm-ng.org/redhat/$releasever
-enabled=1
-gpgcheck=1
-gpgkey=http://rpm.itsm-ng.org/pubkey.gpg
+  [ITSM-NG]
+  name=ITSM-ng
+  baseurl=http://rpm.itsm-ng.org/redhat/$releasever
+  enabled=1
+  gpgcheck=1
+  gpgkey=http://rpm.itsm-ng.org/pubkey.gpg
 ```
 ## Exemple avec un dossier local
 ```
