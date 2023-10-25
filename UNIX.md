@@ -2,7 +2,7 @@
 title: UNIX (LINUX & BSD)
 description: 
 published: true
-date: 2023-10-25T14:16:38.362Z
+date: 2023-10-25T14:16:46.421Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:47:12.193Z
@@ -48,6 +48,8 @@ dateCreated: 2021-10-02T11:47:12.193Z
 
 # RHEL (Redhat)
 - [Créer un dépôt RPM](/UNIX/Creer-Depot-RPM)
+{.links-list}
+
 # Divers essais
 - [Changer l'Init de Debian pour OpenRC](/UNIX/Debian-OpenRC)
 {.links-list}
