@@ -2,7 +2,7 @@
 title: Installer un serveur LEMP sur debian 10 (nginx php mariadb)
 description: 
 published: true
-date: 2023-04-15T18:44:17.893Z
+date: 2023-10-25T14:46:09.906Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-02T11:45:31.996Z
@@ -58,7 +58,8 @@ Nous allons maintenant créer la nôtre: (Remplacer {monsite.domain} par votre s
 
 Bien maintenant vous allez copier cette configuration: (Remplacer {monsite.domain} par votre site ou un nom).
 
-```
+```php
+
 server {
     listen              80;
     listen              [::]:80;
