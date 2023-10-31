@@ -2,25 +2,15 @@
 title: Installation de Kubernetes avec MiniKube
 description: 
 published: true
-date: 2023-09-13T19:39:07.847Z
+date: 2023-10-31T09:20:34.558Z
 tags: 
 editor: markdown
 dateCreated: 2023-09-13T19:13:39.758Z
 ---
 
-# Installation de Docker
+# Installation de Podman
 ```bash
-	apt install ca-certificates curl gnupg
-	install -m 0755 -d /etc/apt/keyrings
-	curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-	chmod a+r /etc/apt/keyrings/docker.gpg
-
-	echo \
-  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
-  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
-  tee /etc/apt/sources.list.d/docker.list > /dev/null
-	apt update
-  apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+	apt install podman
 ```
 
 # Installation de l'outil
@@ -28,10 +18,28 @@ dateCreated: 2023-09-13T19:13:39.758Z
 	wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 	install minikube-linux-amd64 /usr/local/bin/minikube
 ```
+
+# Creation de l'utilisateur kube
 ```bash
-	minikube start
-	echo 'alias kubectl="minikube kubectl --"' >> ~/.bashrc && source .bashrc
+	adduser podman
 ```
+
+# Passer sur l'utilisation standard
+```bash
+	su - podman
+```
+
+# Activer l'autocompletion
+```bash
+		echo 'alias kubectl="minikube kubectl --"' >> ~/.bashrc && source .bashrc
+```
+
+# Installer minikube
+```bash
+	minikube config set rootless true
+  minikube start
+```
+
 
 # Activer le Panneau de configuration web
 ```
