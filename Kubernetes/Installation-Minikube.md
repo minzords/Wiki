@@ -2,7 +2,7 @@
 title: Installation de Kubernetes avec MiniKube
 description: 
 published: true
-date: 2023-10-31T09:20:34.558Z
+date: 2023-10-31T09:20:51.630Z
 tags: 
 editor: markdown
 dateCreated: 2023-09-13T19:13:39.758Z
@@ -40,8 +40,7 @@ dateCreated: 2023-09-13T19:13:39.758Z
   minikube start
 ```
 
-
-# Activer le Panneau de configuration web
+# (Optionnel) Activer le Panneau de configuration web
 ```
 	minikube dashboard
 ```
