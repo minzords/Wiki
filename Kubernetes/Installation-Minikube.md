@@ -2,21 +2,22 @@
 title: Installation de Kubernetes avec MiniKube
 description: 
 published: true
-date: 2023-10-31T09:20:51.630Z
+date: 2023-10-31T10:05:42.088Z
 tags: 
 editor: markdown
 dateCreated: 2023-09-13T19:13:39.758Z
 ---
 
-# Installation de Podman
+# Installation de Podman et runc
 ```bash
-	apt install podman
+	dnf install podman runc
+  systemctl enable --now podman
 ```
 
 # Installation de l'outil
 ```bash
-	wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-	install minikube-linux-amd64 /usr/local/bin/minikube
+	curl https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 -o /usr/local/bin/minikube
+	chmod +x /usr/local/bin/minikube
 ```
 
 # Creation de l'utilisateur kube
@@ -37,7 +38,7 @@ dateCreated: 2023-09-13T19:13:39.758Z
 # Installer minikube
 ```bash
 	minikube config set rootless true
-  minikube start
+  minikube start --driver=podman --container-runtime=cri-o
 ```
 
 # (Optionnel) Activer le Panneau de configuration web
