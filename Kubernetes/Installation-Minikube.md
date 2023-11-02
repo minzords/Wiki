@@ -2,7 +2,7 @@
 title: Installation de Kubernetes avec MiniKube
 description: 
 published: true
-date: 2023-10-31T10:18:44.905Z
+date: 2023-11-02T08:21:20.337Z
 tags: 
 editor: markdown
 dateCreated: 2023-09-13T19:13:39.758Z
@@ -20,6 +20,11 @@ dateCreated: 2023-09-13T19:13:39.758Z
 	chmod +x /usr/local/bin/minikube
 ```
 
+# Patch a faire en root
+```bash
+loginctl enable-linger 1000
+```
+
 # Creation de l'utilisateur kube
 ```bash
 	adduser podman
@@ -33,11 +38,6 @@ dateCreated: 2023-09-13T19:13:39.758Z
 # Activer l'autocompletion
 ```bash
 		echo 'alias kubectl="minikube kubectl --"' >> ~/.bashrc && source .bashrc
-```
-
-# Patch a faire en root
-```bash
-loginctl enable-linger 1000
 ```
 
 # Installer minikube
